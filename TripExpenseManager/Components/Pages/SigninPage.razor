@@ -22,12 +22,14 @@
                    <InputText @bind-Value="_model.Password" placeholder="Enter password" typeof="password" class="form-control rounded-pill fs-6"></InputText>
                    <ValidationMessage For="()=> _model.Password"/>
                </div>
-               <button type="submit" class="btn btn-primary rounded-pill">Signin</button>
+               <button type="submit" class="btn btn-primary rounded-pill">SignIn</button>
            </div>
        </div>
 
     </div>
 </EditForm>
+
+<p class="text-end mt-3">New to Tripex? <NavLink href="/signup">Create Account</NavLink></p>
 
 
 @code {
@@ -43,14 +45,18 @@
             var result = await AuthService.SignInAsync(_model);
             if (result.IsSuccess)
             {
-                NavigationManager.NavigateTo("/home");
+                NavigationManager.NavigateTo("/home", replace:true);
             }
             else
             {
-                MauiInterop.HideLoader();
+                await MauiInterop.ShowErrorAlertAsync(result.Error ?? "Error in signing in");
             }
         }
-        catch (Exception)
+        catch (Exception ex)
+        {
+            await MauiInterop.ShowErrorAlertAsync(ex.Message);            
+        }
+        finally
         {
             MauiInterop.HideLoader();
         }

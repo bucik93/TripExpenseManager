@@ -1,40 +1,69 @@
 ﻿@page "/signup"
 @layout AuthLayout
 
-@inject AuthService AuthService
 @inject NavigationManager NavigationManager
+@inject AuthService AuthService
+@inject MauiInterop MauiInterop
 
-<EditForm Model="_model" >
-    <DataAnnotationsValidator/>
+<EditForm Model="_model" OnValidSubmit="SignUpAsync">
+    <DataAnnotationsValidator />
     <div class="card border-0 shadow-sm">
-       <div class="card-body text-center">
-           <h4>Welcome back</h4>
-           <p class="text-muted">Sign-in to your Tripex Account</p>
-           <div class="vstack text-start">
-               <div class="mb-3">
-                   <label class="form-label">UserName</label>
-                   <InputText @bind-Value="_model.UserName" placeholder="Enter User Name" class="form-control rounded-pill fs-6"></InputText>
-                   <ValidationMessage For="()=> _model.UserName"/>
-               </div>
-                  <div class="mb-3">
-                   <label class="form-label">Password</label>
-                   <InputText @bind-Value="_model.Password" placeholder="Enter password" typeof="password" class="form-control rounded-pill fs-6"></InputText>
-                   <ValidationMessage For="()=> _model.Password"/>
-               </div>
-               <button type="submit" class="btn btn-primary rounded-pill">Signin</button>
-           </div>
-       </div>
+        <div class="card-body text-center">
+            <h4>Hello</h4>
+            <p class="text-muted">Sign-up to your Tripex</p>
+            <div class="vstack text-start">
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <InputText @bind-Value="_model.Name" placeholder="Enter Name" class="form-control rounded-pill fs-6"></InputText>
+                    <ValidationMessage For="()=> _model.Name" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">UserName</label>
+                    <InputText @bind-Value="_model.UserName" placeholder="Enter User Name" class="form-control rounded-pill fs-6"></InputText>
+                    <ValidationMessage For="()=> _model.UserName" />
+                </div>            
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <InputText @bind-Value="_model.Password" placeholder="Enter password" typeof="password" class="form-control rounded-pill fs-6"></InputText>
+                    <ValidationMessage For="()=> _model.Password" />
+                </div>
+                <button type="submit" class="btn btn-primary rounded-pill">SignUp</button>
+            </div>
+        </div>
 
     </div>
 </EditForm>
-
+<p class="text-end mt-3">Already hav an account? <NavLink href="/signin">Sign-in</NavLink></p>
 
 
 @code {
-    private SignInModel _model = new();
+    private SignUpModel _model = new();
 
+    private async Task SignUpAsync()
+    {
+        MauiInterop.ShowLoader();
 
-   
+        try
+        {
+            var result = await AuthService.SignUpAsync(_model);
+            if (result.IsSuccess)
+            {
+                NavigationManager.NavigateTo("/home", replace: true);
+            }
+            else
+            {
+                await MauiInterop.ShowErrorAlertAsync(result.Error ?? "Error in signing up");
+            }
+        }
+        catch (Exception ex)
+        {
+            await MauiInterop.ShowErrorAlertAsync(ex.Message);
+        }
+        finally
+        {
+            MauiInterop.HideLoader();
+        }
+    }
 
 }
 
