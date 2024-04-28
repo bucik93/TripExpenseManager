@@ -1,7 +1,11 @@
 ﻿@page "/signin"
 @layout AuthLayout
 
-<EditForm Model="_model">
+@inject NavigationManager NavigationManager
+@inject AuthService AuthService
+@inject MauiInterop MauiInterop
+
+<EditForm Model="_model" OnValidSubmit="SignInAsync">
     <DataAnnotationsValidator/>
     <div class="card border-0 shadow-sm">
        <div class="card-body text-center">
@@ -11,12 +15,12 @@
                <div class="mb-3">
                    <label class="form-label">UserName</label>
                    <InputText @bind-Value="_model.UserName" placeholder="Enter User Name" class="form-control rounded-pill fs-6"></InputText>
-                   <ValidationMessage.For="()=> _model.UserName"/>
+                   <ValidationMessage For="()=> _model.UserName"/>
                </div>
                   <div class="mb-3">
                    <label class="form-label">Password</label>
                    <InputText @bind-Value="_model.Password" placeholder="Enter password" typeof="password" class="form-control rounded-pill fs-6"></InputText>
-                   <ValidationMessage.For="()=> _model.Password"/>
+                   <ValidationMessage For="()=> _model.Password"/>
                </div>
                <button type="submit" class="btn btn-primary rounded-pill">Signin</button>
            </div>
@@ -29,5 +33,27 @@
 @code {
     private SignInModel _model = new();
 
+    private async Task SignInAsync()
+    {
+        MauiInterop.ShowLoader();
+
+        try
+        {
+            await Task.Delay(5000);
+            var result = await AuthService.SignInAsync(_model);
+            if (result.IsSuccess)
+            {
+                NavigationManager.NavigateTo("/home");
+            }
+            else
+            {
+                MauiInterop.HideLoader();
+            }
+        }
+        catch (Exception)
+        {
+            MauiInterop.HideLoader();
+        }
+    }
 
 }

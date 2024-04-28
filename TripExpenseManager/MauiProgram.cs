@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using TripExpenseManager.Data;
+using TripExpenseManager.ViewModels;
 
 namespace TripExpenseManager
 {
@@ -27,9 +28,14 @@ namespace TripExpenseManager
 
         private static void AddServices(IServiceCollection services)
         {
+            services.AddSingleton<AppViewModel>()
+                .AddSingleton<MauiInterop>();
+
             services.AddSingleton<DatabaseContext>()
                     .AddTransient<SeeDataService>()
                     .AddTransient<AuthService>();
+                    
+                    
         }
     }
 }

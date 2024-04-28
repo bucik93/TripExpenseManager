@@ -6,11 +6,11 @@ namespace TripExpenseManager
     {
         private readonly SeeDataService _seeDataService;
 
-        public App(SeeDataService seeDataService)
+        public App(SeeDataService seeDataService, AppViewModel viewModel)
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MainPage(viewModel);
             _seeDataService = seeDataService;
         }
         protected override async void OnStart()
