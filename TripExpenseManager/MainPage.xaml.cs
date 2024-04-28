@@ -6,6 +6,7 @@
         {
             InitializeComponent();
             BindingContext = viewModel;
+
         }
     }
 }

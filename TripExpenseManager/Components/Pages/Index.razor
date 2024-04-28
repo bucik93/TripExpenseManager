@@ -1,10 +1,12 @@
 ﻿@page "/"
 @inject AuthService Auth
 @inject NavigationManager NavigationManager
+@inject AuthService AuthService
 
 @code{
     protected override void OnInitialized()
-    {
+    { 
+        //AuthService.SignOut();
 
         if(Auth.IsSignedIn)
         {

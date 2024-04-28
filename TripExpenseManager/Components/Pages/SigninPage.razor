@@ -1,35 +1,130 @@
 ﻿@page "/signin"
-@layout AuthLayout
+@* @layout AuthLayout *@
 
 @inject NavigationManager NavigationManager
 @inject AuthService AuthService
 @inject MauiInterop MauiInterop
+<style type="text/css" scoped>
+    .my-rounded-pill {
+      /*   background-color: #ddd;
+        border: none;
+        color: black;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer; */
+        padding: 10px 20px;
+        border-radius: 12px;
+        border: 1px solid gray;
+    }
+
+    .card{
+        background-color: black;
+        color: white;
+        height: 100vh;
+    }
+
+    .form-control{
+       background-color: black;
+    }
+
+    h3{
+        margin-top: 50px;
+        text-align: left;
+    }
+
+    .lbl {
+        margin-top: 25px;
+    }
+
+
+    .btn-grad {
+        background-image: linear-gradient(to right, #C33764 0%, #1D2671 51%, #C33764 100%);
+        margin: 10px;
+        padding: 15px 45px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 10px darkgray;
+        border-radius: 10px;
+        display: block;
+        margin-top: 50px;
+    }
+
+    .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+        }
+
+  
+
+    .form-link {
+        text-align: right;
+        margin-top: 10px;
+    }
+
+        .form-link span,
+        .form-link a {
+            font-size: 16px;
+            font-weight: 500;            
+        }
+
+    a {
+        background: linear-gradient(to right, #C33764 0%, #1D2671 51%, #C33764 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+       
+    }
+
+    h1 {
+        font-size: 50px;
+        background-image: linear-gradient(to right, #C33764 0%, #1D2671 51%, #C33764 100%);        
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+    }
+</style>
+
 
 <EditForm Model="_model" OnValidSubmit="SignInAsync">
     <DataAnnotationsValidator/>
     <div class="card border-0 shadow-sm">
        <div class="card-body text-center">
-           <h4>Welcome back</h4>
-           <p class="text-muted">Sign-in to your Tripex Account</p>
-           <div class="vstack text-start">
-               <div class="mb-3">
-                   <label class="form-label">UserName</label>
-                   <InputText @bind-Value="_model.UserName" placeholder="Enter User Name" class="form-control rounded-pill fs-6"></InputText>
+            <h1 class="text-muted">Dream Way</h1>
+            <h1 class="text-muted">To Learn</h1>
+
+           <h3>Sign In</h3>
+            <div class="vstack text-start">
+                   <label class="form-label lbl">Email</label>
+                <InputText @bind-Value="_model.UserName" placeholder="Enter email" class="form-control my-rounded-pill fs-6"></InputText>
                    <ValidationMessage For="()=> _model.UserName"/>
-               </div>
-                  <div class="mb-3">
-                   <label class="form-label">Password</label>
-                   <InputText @bind-Value="_model.Password" placeholder="Enter password" typeof="password" class="form-control rounded-pill fs-6"></InputText>
+             
+                   <label class="form-label lbl">Password</label>
+                <InputText @bind-Value="_model.Password" placeholder="Enter password" typeof="password" class="form-control my-rounded-pill fs-6"></InputText>
                    <ValidationMessage For="()=> _model.Password"/>
-               </div>
-               <button type="submit" class="btn btn-primary rounded-pill">SignIn</button>
+@*                 <i class='bx bx-hide eye-icon'></i>
+ *@                <div class="form-link">
+                <a href="#" class="forgot-pass">Forgot password?</a>
+                </div>
+                       <br />
+                <button type="submit" class="btn-grad my-rounded-pill">Sign In</button>
+
            </div>
+
        </div>
+        <p class="text-center mt-3">Don't have an account? <a href="/signup">Sign Up</a></p>
 
     </div>
 </EditForm>
 
-<p class="text-end mt-3">New to Tripex? <NavLink href="/signup">Create Account</NavLink></p>
 
 
 @code {
@@ -41,7 +136,7 @@
 
         try
         {
-            await Task.Delay(5000);
+            //await Task.Delay(5000);
             var result = await AuthService.SignInAsync(_model);
             if (result.IsSuccess)
             {
