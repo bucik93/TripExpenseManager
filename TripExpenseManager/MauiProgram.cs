@@ -28,7 +28,8 @@ namespace TripExpenseManager
         private static void AddServices(IServiceCollection services)
         {
             services.AddSingleton<DatabaseContext>()
-                    .AddTransient<SeeDataService>();
+                    .AddTransient<SeeDataService>()
+                    .AddTransient<AuthService>();
         }
     }
 }

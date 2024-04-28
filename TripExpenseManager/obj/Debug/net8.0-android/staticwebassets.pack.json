@@ -1,27 +1,27 @@
 {
   "Files": [
     {
-      "Id": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\TripExpenseManager.styles.css",
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\TripExpenseManager.styles.css",
       "PackagePath": "staticwebassets\\TripExpenseManager.styles.css"
     },
     {
-      "Id": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\wwwroot\\css\\app.css",
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\wwwroot\\favicon.png",
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\wwwroot\\index.html",
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {

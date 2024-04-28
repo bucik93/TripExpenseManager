@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZaveTqN8uS8de4PJFNVJYsVyKjVySicns3bFhSES6YjPawtL4n9jc7AETzcAoknE7b6aapxvX5kXSGMDu62i1w==",
+  "dgSpecHash": "xQ1NF2upAUU3pEWG9skXDo2k29clwNJ8ygILNHFYaWDq+eXyGsCXYetBYvMKh/xDZiEUKCw+VnkGGl3T0HyqpQ==",
   "success": true,
-  "projectFilePath": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager.csproj",
+  "projectFilePath": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\piotr\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.0\\microsoft.aspnetcore.authorization.8.0.0.nupkg.sha512",

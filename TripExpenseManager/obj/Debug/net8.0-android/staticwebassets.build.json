@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pfBICY01PfS3rWZOhoFiBkm+xrfu79PSwiTX8ZO99Nw=",
+  "Hash": "hM7Af/QgMYul7GS/yJIbtXHdX9lFi70XSPDWmCjwnfQ=",
   "Source": "TripExpenseManager",
   "BasePath": "/",
   "Mode": "Root",
@@ -10,17 +10,17 @@
     {
       "Name": "TripExpenseManager\\wwwroot",
       "Source": "TripExpenseManager",
-      "ContentRoot": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\wwwroot\\",
+      "ContentRoot": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\",
       "BasePath": "/",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\TripExpenseManager.styles.css",
+      "Identity": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\TripExpenseManager.styles.css",
       "SourceId": "TripExpenseManager",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\",
+      "ContentRoot": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\",
       "BasePath": "/",
       "RelativePath": "TripExpenseManager.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\TripExpenseManager.styles.css"
+      "OriginalItemSpec": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\TripExpenseManager.styles.css"
     },
     {
-      "Identity": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\TripExpenseManager.bundle.scp.css",
+      "Identity": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\TripExpenseManager.bundle.scp.css",
       "SourceId": "TripExpenseManager",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\",
+      "ContentRoot": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\",
       "BasePath": "/",
       "RelativePath": "TripExpenseManager.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\TripExpenseManager.bundle.scp.css"
+      "OriginalItemSpec": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\TripExpenseManager.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\wwwroot\\css\\app.css",
+      "Identity": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\css\\app.css",
       "SourceId": "TripExpenseManager",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\wwwroot\\",
+      "ContentRoot": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\app.css"
     },
     {
-      "Identity": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "TripExpenseManager",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\wwwroot\\",
+      "ContentRoot": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "TripExpenseManager",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\wwwroot\\",
+      "ContentRoot": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\wwwroot\\favicon.png",
+      "Identity": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\favicon.png",
       "SourceId": "TripExpenseManager",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\wwwroot\\",
+      "ContentRoot": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\wwwroot\\index.html",
+      "Identity": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\index.html",
       "SourceId": "TripExpenseManager",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\wwwroot\\",
+      "ContentRoot": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "index.html",
       "AssetKind": "All",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager.csproj": {}
+    "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager.csproj": {}
   },
   "projects": {
-    "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager.csproj": {
+    "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager.csproj",
+        "projectUniqueName": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager.csproj",
         "projectName": "TripExpenseManager",
-        "projectPath": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager.csproj",
+        "projectPath": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager.csproj",
         "packagesPath": "C:\\Users\\piotr\\.nuget\\packages\\",
-        "outputPath": "D:\\Projekt Blazor Maui Hybrid\\TripExpenseManager\\TripExpenseManager\\obj\\",
+        "outputPath": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

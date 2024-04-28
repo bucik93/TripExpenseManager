@@ -1,0 +1,391 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\components\\pages\\signuppage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\components\\pages\\signuppage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\components\\pages\\signinpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\components\\pages\\signinpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\components\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\components\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\components\\pages\\homepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\components\\pages\\homepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\platforms\\android\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\platforms\\android\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.52\\tools\\Xamarin.Android.Common.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\models\\loggedinuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\models\\loggedinuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\models\\methodresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\models\\methodresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\data\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\data\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\models\\signinmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\models\\signinmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\data\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\data\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\data\\tripstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\data\\tripstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\data\\locationcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\data\\locationcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\data\\expensecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\data\\expensecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\data\\expense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\data\\expense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\services\\seedataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\services\\seedataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainLayout.razor.css",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Components\\Layout\\MainLayout.razor.css",
+              "RelativeDocumentMoniker": "TripExpenseManager\\Components\\Layout\\MainLayout.razor.css",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Components\\Layout\\MainLayout.razor.css",
+              "RelativeToolTip": "TripExpenseManager\\Components\\Layout\\MainLayout.razor.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-28T08:09:41.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "TripExpenseManager\\Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeToolTip": "TripExpenseManager\\Platforms\\Android\\AndroidManifest.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-04-28T08:09:18.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Xamarin.Android.Common.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.52\\tools\\Xamarin.Android.Common.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.52\\tools\\Xamarin.Android.Common.targets",
+              "ViewState": "AQIAAOgJAAAAAAAAAAAhwP4JAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-04-28T08:08:11.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "TripExpenseManager\\Components\\_Imports.razor",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Components\\_Imports.razor",
+              "RelativeToolTip": "TripExpenseManager\\Components\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-28T08:07:46.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoggedInUser.cs",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Models\\LoggedInUser.cs",
+              "RelativeDocumentMoniker": "TripExpenseManager\\Models\\LoggedInUser.cs",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Models\\LoggedInUser.cs",
+              "RelativeToolTip": "TripExpenseManager\\Models\\LoggedInUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T08:05:31.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MethodResult.cs",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Models\\MethodResult.cs",
+              "RelativeDocumentMoniker": "TripExpenseManager\\Models\\MethodResult.cs",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Models\\MethodResult.cs",
+              "RelativeToolTip": "TripExpenseManager\\Models\\MethodResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T07:54:09.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DatabaseContext.cs",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Data\\DatabaseContext.cs",
+              "RelativeDocumentMoniker": "TripExpenseManager\\Data\\DatabaseContext.cs",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Data\\DatabaseContext.cs",
+              "RelativeToolTip": "TripExpenseManager\\Data\\DatabaseContext.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAQwDkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T07:46:28.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomePage.razor",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Components\\Pages\\HomePage.razor",
+              "RelativeDocumentMoniker": "TripExpenseManager\\Components\\Pages\\HomePage.razor",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Components\\Pages\\HomePage.razor",
+              "RelativeToolTip": "TripExpenseManager\\Components\\Pages\\HomePage.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-28T07:25:36.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.razor",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Components\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "TripExpenseManager\\Components\\Pages\\Index.razor",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Components\\Pages\\Index.razor",
+              "RelativeToolTip": "TripExpenseManager\\Components\\Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-28T07:20:59.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SigninPage.razor",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Components\\Pages\\SigninPage.razor",
+              "RelativeDocumentMoniker": "TripExpenseManager\\Components\\Pages\\SigninPage.razor",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Components\\Pages\\SigninPage.razor",
+              "RelativeToolTip": "TripExpenseManager\\Components\\Pages\\SigninPage.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-28T07:22:18.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SignupPage.razor",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Components\\Pages\\SignupPage.razor",
+              "RelativeDocumentMoniker": "TripExpenseManager\\Components\\Pages\\SignupPage.razor",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Components\\Pages\\SignupPage.razor",
+              "RelativeToolTip": "TripExpenseManager\\Components\\Pages\\SignupPage.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-28T07:23:09.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GlobalUsings.cs",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\GlobalUsings.cs",
+              "RelativeDocumentMoniker": "TripExpenseManager\\GlobalUsings.cs",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\GlobalUsings.cs",
+              "RelativeToolTip": "TripExpenseManager\\GlobalUsings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T07:49:50.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SignInModel.cs",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Models\\SignInModel.cs",
+              "RelativeDocumentMoniker": "TripExpenseManager\\Models\\SignInModel.cs",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Models\\SignInModel.cs",
+              "RelativeToolTip": "TripExpenseManager\\Models\\SignInModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T07:47:07.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Data\\User.cs",
+              "RelativeDocumentMoniker": "TripExpenseManager\\Data\\User.cs",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Data\\User.cs",
+              "RelativeToolTip": "TripExpenseManager\\Data\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T07:46:52.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TripStatus.cs",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Data\\TripStatus.cs",
+              "RelativeDocumentMoniker": "TripExpenseManager\\Data\\TripStatus.cs",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Data\\TripStatus.cs",
+              "RelativeToolTip": "TripExpenseManager\\Data\\TripStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T07:46:46.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LocationCategory.cs",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Data\\LocationCategory.cs",
+              "RelativeDocumentMoniker": "TripExpenseManager\\Data\\LocationCategory.cs",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Data\\LocationCategory.cs",
+              "RelativeToolTip": "TripExpenseManager\\Data\\LocationCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T07:46:24.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Trip.cs",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Data\\Trip.cs",
+              "RelativeDocumentMoniker": "TripExpenseManager\\Data\\Trip.cs",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Data\\Trip.cs",
+              "RelativeToolTip": "TripExpenseManager\\Data\\Trip.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T07:46:23.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "TripExpenseManager\\Services\\AuthService.cs",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Services\\AuthService.cs",
+              "RelativeToolTip": "TripExpenseManager\\Services\\AuthService.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAA3wCgAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T07:28:23.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ExpenseCategory.cs",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Data\\ExpenseCategory.cs",
+              "RelativeDocumentMoniker": "TripExpenseManager\\Data\\ExpenseCategory.cs",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Data\\ExpenseCategory.cs",
+              "RelativeToolTip": "TripExpenseManager\\Data\\ExpenseCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T07:46:35.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Expense.cs",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Data\\Expense.cs",
+              "RelativeDocumentMoniker": "TripExpenseManager\\Data\\Expense.cs",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Data\\Expense.cs",
+              "RelativeToolTip": "TripExpenseManager\\Data\\Expense.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T07:45:22.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "TripExpenseManager\\MauiProgram.cs",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\MauiProgram.cs",
+              "RelativeToolTip": "TripExpenseManager\\MauiProgram.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T07:33:18.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SeeDataService.cs",
+              "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Services\\SeeDataService.cs",
+              "RelativeDocumentMoniker": "TripExpenseManager\\Services\\SeeDataService.cs",
+              "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Services\\SeeDataService.cs",
+              "RelativeToolTip": "TripExpenseManager\\Services\\SeeDataService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T07:28:01.944Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
