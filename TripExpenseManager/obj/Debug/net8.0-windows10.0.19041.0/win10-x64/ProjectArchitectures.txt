@@ -1,0 +1,1 @@
+D:\Projekt Blazor Maui Hybrid\TripExpenseManager\TripExpenseManager\TripExpenseManager.csproj;x64
