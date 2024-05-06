@@ -38,7 +38,8 @@ namespace TripExpenseManager
                     .AddTransient<SeeDataService>();
 
             services.AddTransient<AuthService>().
-                AddSingleton<TripsService>();
+                AddSingleton<TripsService>()
+                .AddTransient<DropDownsService>();
 
 
         }

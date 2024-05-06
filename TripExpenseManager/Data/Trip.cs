@@ -18,7 +18,22 @@ namespace TripExpenseManager.Data
         public DateTime? ToDate { get; set; }
         public DateTime AddedOn { get; set; }
         public DateTime? ModifiedOn { get; set; }
-        public TripStatus Status { get; set; } = TripStatus.Palnned;
+        //public TripStatus Status { get; set; } = TripStatus.Palnned;
+
+        private TripStatus _status = TripStatus.Palnned;
+        public TripStatus Status 
+        {
+            get => _status;
+            set
+            {
+                DisplayStatus = value.ToString();
+                _status = value;
+
+            }
+        }
+
+        [Ignore]
+        public string DisplayStatus { get; set; }
 
 
     }

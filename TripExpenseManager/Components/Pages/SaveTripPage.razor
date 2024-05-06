@@ -1,8 +1,160 @@
 ﻿@page "/trips/add"
 
+@inject TripsService TripsService
+@inject NavigationManager NavigationManager
+@inject MauiInterop MauiInterop
+@inject DropDownsService DropDownsService
 
-<h3>Save Trip</h3>
+<style type="text/css" scoped>
+    .img-container {
+/*         background-image: url('images/travel-beach.png');
+ */        background-color: dodgerblue;
+        background-position-y: -100px;
+        height: 250px;
+    }
+
+    .form-container {
+        background-color: transparent;
+        margin-top: -200px;
+        padding: 25px 10px;
+    }
+
+    .form-body {
+        background-color: white;
+        color: black;
+        border-radius: 40px 40px 0 0;
+        min-height: calc(100vh - 200px);
+        padding: 15px;
+    }
+
+    .category-img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .category-label {
+        font-size: 12px;
+    }
+</style>
+
+
+<div class="img-container m-0 p-0 vw-100"></div>
+
+<EditForm Model="_model">
+    <DataAnnotationsValidator />
+    <div class="form-container">
+        <div class="form-body bg-white shadow d-flex flex-column">
+            <h3 class="mt-3 text-center">Add a Trip</h3>
+            <div class="mt-3 flex-grow-1">
+                <div class="mb-3">
+                    <label class="form-label">Category</label>
+                    <InputText type="hidden" @bind-Value="_model.CategoryImage" />
+                    <div class="d-flex flex-wrap justify-content-around">
+                        @foreach (var category in _locationCategories)
+                        {
+                            var iconClass = "bx-check-circle text-muted";
+                            var borderClass = "";
+                            var nameClass = "text-muted";
+                            if(_model.CategoryImage == category.Image)
+                            {
+                                iconClass = "bxs-check-circle text-success";
+                                borderClass = "border-success shadow";
+                                nameClass = "text-dark";
+                            }
+
+                            <div class="rounded ps-1 vstack text-center border m-1 @borderClass" 
+                            @onclick="() => ToggleCategorySelection(category)">
+                                <i class="position-absolute bx @iconClass"></i>
+                                <img class="mx-auto category-img" src="@category.Image" />
+                                <label class="category-label @nameClass">@category.Name</label>
+                            </div>
+                        }
+                        <ValidationMessage For="() => _model.CategoryImage" />
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Trip name</label>
+                    <InputText @bind-Value="_model.Title" class="form-control rounded-pill fs-6" placeholder="Trip title" />
+                    <ValidationMessage For="() => _model.Title" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Trip location (City/State/Country)</label>
+                    <InputText @bind-Value="_model.Location" class="form-control rounded-pill fs-6" placeholder="Trip location" />
+                    <ValidationMessage For="() => _model.Location" />
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label class="form-label">Trip start date</label>
+                            <InputDate @bind-Value="_model.FromDate" class="form-control rounded-pill fs-6" placeholder="Trip start date" />
+                            <ValidationMessage For="() => _model.FromDate" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label class="form-label">Trip end date</label>
+                            <InputDate @bind-Value="_model.ToDate" class="form-control rounded-pill fs-6" placeholder="Trip end date" />
+                            <ValidationMessage For="() => _model.ToDate" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Trip status</label>
+                    <InputSelect @bind-Value=_model.DisplayStatus class="form-control rounded-pill fs-6">
+                        @foreach (var status in _statuses)
+                        {
+                            <option value="@status">@status</option>
+                        }
+                    </InputSelect>
+                    <ValidationMessage For="() => _model.DisplayStatus" />
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <button type="button" class="btn btn-outline-danger shadow">
+                        <i class="bx bx-x"></i>
+                    </button>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-7">
+                    <button type="submit" class="btn btn-primary rounded-pill shadow">Save Trip</button>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+</EditForm>
+
 
 @code {
+    Trip _model = new();
+
+    private LocationCategory[] _locationCategories = Array.Empty<LocationCategory>();
+    private string[] _statuses = Array.Empty<string>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        MauiInterop.ShowLoader();
+
+        _locationCategories = await DropDownsService.GetLocationCategoriesAsync();
+        _statuses = DropDownsService.GetTripStatuses();
+
+        MauiInterop.HideLoader();
+
+    }
+
+    private void ToggleCategorySelection(LocationCategory category)
+    {
+        if(_model.CategoryImage == category.Image)
+        {
+            _model.CategoryImage = String.Empty;
+        }
+        else
+        {
+            _model.CategoryImage = category.Image;
+        }
+    }
 
 }

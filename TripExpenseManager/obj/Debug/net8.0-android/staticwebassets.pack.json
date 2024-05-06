@@ -25,8 +25,20 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\images\\chair.png",
+      "PackagePath": "staticwebassets\\images\\chair.png"
+    },
+    {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\images\\city.png",
+      "PackagePath": "staticwebassets\\images\\city.png"
+    },
+    {
       "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\images\\travel-and-tourism.png",
       "PackagePath": "staticwebassets\\images\\travel-and-tourism.png"
+    },
+    {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\images\\travel-beach.png",
+      "PackagePath": "staticwebassets\\images\\travel-beach.png"
     },
     {
       "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\index.html",
