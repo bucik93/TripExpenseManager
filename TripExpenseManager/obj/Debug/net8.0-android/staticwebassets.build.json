@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UmnWmWJjF+6C0s84Z3ZOIurRBsRTJrvwxhy1eGakFgE=",
+  "Hash": "xmhmw66NXc9lSQDFl8MJ92nQYqyu0bzp4eTZHlqdoWk=",
   "Source": "TripExpenseManager",
   "BasePath": "/",
   "Mode": "Root",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\css\\bootstrap\\open-iconic-bootstrap.css",
+      "SourceId": "TripExpenseManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/bootstrap/open-iconic-bootstrap.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\open-iconic-bootstrap.css"
     },
     {
       "Identity": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\favicon.png",

@@ -1,7 +1,11 @@
 ﻿@page "/home"
+@inject AppState AppState
 
 <h3>HomePage</h3>
 
 @code {
-
+    protected override async Task OnInitializedAsync()
+    {
+        AppState.SetSelectedMenuItem(AppConstants.MenuItems.Home);       
+    }
 }

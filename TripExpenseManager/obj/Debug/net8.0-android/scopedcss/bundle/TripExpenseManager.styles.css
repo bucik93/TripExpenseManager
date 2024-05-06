@@ -1,1 +1,22 @@
 /* /Components/Layout/MainLayout.razor.rz.scp.css */
+
+
+.top-navbar[b-tde58y4tub]{
+    height: var(--navbar-height);
+    z-index: 10;
+    color: white;
+    
+}
+
+.body-content[b-tde58y4tub]{
+    padding-top: var(--navbar-height) ;
+}
+
+.bottom-tabbar[b-tde58y4tub]{
+    bottom: 5px;
+    z-index: 10;
+}
+
+.light-white[b-tde58y4tub]{
+    color: #BBBBBB !important;
+}

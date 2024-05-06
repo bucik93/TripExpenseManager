@@ -10,6 +10,7 @@ namespace TripExpenseManager.ViewModels
     public class AppViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
+        private bool _isBusy = true;
 
         public bool IsBusy
         {
@@ -23,7 +24,6 @@ namespace TripExpenseManager.ViewModels
                 }                  
             } 
         }
-        private bool _isBusy { get; set; }
         public void ToggleIsBusy(bool isBusy) => IsBusy = isBusy;
       
     }

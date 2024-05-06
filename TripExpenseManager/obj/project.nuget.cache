@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "xQ1NF2upAUU3pEWG9skXDo2k29clwNJ8ygILNHFYaWDq+eXyGsCXYetBYvMKh/xDZiEUKCw+VnkGGl3T0HyqpQ==",
+  "dgSpecHash": "fOcES8ys8f61bJs8Urff5y2jZmljuGIBkesn1d77tkNEqIB637akwFs/m33PdMP13Z/15ySGGc6t/joYc89NhA==",
   "success": true,
   "projectFilePath": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\piotr\\.nuget\\packages\\communitytoolkit.maui\\7.0.0\\communitytoolkit.maui.7.0.0.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\communitytoolkit.maui.core\\7.0.0\\communitytoolkit.maui.core.7.0.0.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.0\\microsoft.aspnetcore.authorization.8.0.0.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.0\\microsoft.aspnetcore.components.8.0.0.nupkg.sha512",
@@ -57,6 +59,7 @@
     "C:\\Users\\piotr\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\system.runtime.interopservices.nfloat.internal\\6.0.1\\system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512",
+    "C:\\Users\\piotr\\.nuget\\packages\\system.speech\\8.0.0-rc.2.23479.6\\system.speech.8.0.0-rc.2.23479.6.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
     "C:\\Users\\piotr\\.nuget\\packages\\xamarin.android.glide\\4.15.1.2\\xamarin.android.glide.4.15.1.2.nupkg.sha512",

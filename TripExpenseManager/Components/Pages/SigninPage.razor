@@ -28,6 +28,13 @@
 
     .form-control{
        background-color: black;
+        color: white;
+    }
+
+        .form-control:focus {
+            background-color: #202020;
+            color: white;
+            box-shadow: 0px 0px 4px 4px #1D2671;
     }
 
     h3{
@@ -41,15 +48,15 @@
 
 
     .btn-grad {
-        background-image: linear-gradient(to right, #C33764 0%, #1D2671 51%, #C33764 100%);
+        background-image: linear-gradient(to right, #C63764 0%, #1D2671 51%, #C33764 100%);
         margin: 10px;
         padding: 15px 45px;
         text-align: center;
         text-transform: uppercase;
         transition: 0.5s;
         background-size: 200% auto;
-        color: white;
-        box-shadow: 0 0 10px darkgray;
+        color: #1D2671;
+        box-shadow: 0 0 2px #1D2671;
         border-radius: 10px;
         display: block;
         margin-top: 50px;
@@ -57,10 +64,11 @@
 
     .btn-grad:hover {
             background-position: right center; /* change the direction of the change here */
-            color: #fff;
+            color: #1D2671;
             text-decoration: none;
         }
 
+     
   
 
     .form-link {
@@ -75,7 +83,7 @@
         }
 
     a {
-        background: linear-gradient(to right, #C33764 0%, #1D2671 51%, #C33764 100%);
+        background: linear-gradient(to right, #C33764 0%, #7D2671 51%, #C33764 100%);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
        
@@ -98,8 +106,8 @@
     <DataAnnotationsValidator/>
     <div class="card border-0 shadow-sm">
        <div class="card-body text-center">
-            <h1 class="text-muted">Dream Way</h1>
-            <h1 class="text-muted">To Learn</h1>
+          @*   <h1 class="text-muted">Dream Way</h1>
+            <h1 class="text-muted">To Learn</h1> *@
 
            <h3>Sign In</h3>
             <div class="vstack text-start">
@@ -109,9 +117,10 @@
              
                    <label class="form-label lbl">Password</label>
                 <InputText @bind-Value="_model.Password" placeholder="Enter password" typeof="password" class="form-control my-rounded-pill fs-6"></InputText>
-                   <ValidationMessage For="()=> _model.Password"/>
-@*                 <i class='bx bx-hide eye-icon'></i>
- *@                <div class="form-link">
+                   <ValidationMessage For="()=> _model.Password"/> 
+               
+
+             <div class="form-link">
                 <a href="#" class="forgot-pass">Forgot password?</a>
                 </div>
                        <br />
@@ -129,6 +138,7 @@
 
 @code {
     private SignInModel _model = new();
+   
 
     private async Task SignInAsync()
     {

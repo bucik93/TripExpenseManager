@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\css\\bootstrap\\open-iconic-bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\open-iconic-bootstrap.css"
+    },
+    {
       "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },

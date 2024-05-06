@@ -9,7 +9,7 @@ namespace TripExpenseManager.Models
 {
     public class SignInModel
     {
-        [Required, MaxLength(20)]
+        [Required(ErrorMessage = "Proszę wpisać email"), MaxLength(20)]
         public string UserName { get; set; }
 
         [Required, MaxLength(20)]

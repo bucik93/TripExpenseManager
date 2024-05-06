@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CommunityToolkit.Maui;
+using Microsoft.Extensions.Logging;
 using TripExpenseManager.Data;
 using TripExpenseManager.ViewModels;
 
@@ -14,13 +15,14 @@ namespace TripExpenseManager
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                });
+                })
+                .UseMauiCommunityToolkit();
 
             builder.Services.AddMauiBlazorWebView();
 
 #if DEBUG
-    		builder.Services.AddBlazorWebViewDeveloperTools();
-    		builder.Logging.AddDebug();
+            builder.Services.AddBlazorWebViewDeveloperTools();
+            builder.Logging.AddDebug();
 #endif
             AddServices(builder.Services);
             return builder.Build();
@@ -29,13 +31,16 @@ namespace TripExpenseManager
         private static void AddServices(IServiceCollection services)
         {
             services.AddSingleton<AppViewModel>()
-                .AddSingleton<MauiInterop>();
+                .AddSingleton<MauiInterop>()
+                .AddSingleton<AppState>();
 
             services.AddSingleton<DatabaseContext>()
-                    .AddTransient<SeeDataService>()
-                    .AddTransient<AuthService>();
-                    
-                    
+                    .AddTransient<SeeDataService>();
+
+            services.AddTransient<AuthService>().
+                AddSingleton<TripsService>();
+
+
         }
     }
 }
