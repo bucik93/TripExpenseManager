@@ -18,9 +18,9 @@ namespace TripExpenseManager.Services
 
         public async Task SeedDataAsync()
         {
-            var foodCategory = await _context.FindAsync< ExpenseCategory>("Food");
+            var foodCategory = await _context.FindAsync<ExpenseCategory>("Food");
 
-            if(foodCategory is not null)
+            if (foodCategory is not null)
             {
                 return;
             }
@@ -33,7 +33,12 @@ namespace TripExpenseManager.Services
             var locationCategories = new List<LocationCategory>
             {
                 new LocationCategory("Beach", "/images/chair.png"),
-                new LocationCategory("City", "/images/city.png")
+                new LocationCategory("City", "/images/city.png"),
+                new LocationCategory("Mountains", "/images/mountains.png"),
+                new LocationCategory("Island", "/images/island.png"),
+                new LocationCategory("Nature", "/images/nature.png"),
+                new LocationCategory("Road trip", "/images/road.png")
+
             };
 
             foreach (var location in locationCategories)

@@ -1,13 +1,15 @@
-﻿@inherits LayoutComponentBase
+﻿@using System.ComponentModel
+@inherits LayoutComponentBase
 
 @implements IDisposable
 @inject NavigationManager NavigationManager
 @inject AppState AppState
+@inject MauiInterop MauiInterop
 
 <div class="w-100 position-fixed p-3 mb-3 bg-black shaddow-sm top-navbar">
     <div class="hstack gap-3">
-        <h3 class="m-0 w-100">
-            @AppState.Pagetitle
+        <h3 class="m-0 w-100 @(MauiInterop.IsIOS ? "text-center" : "text-start")">
+            @AppState.PageTitle
         </h3>
         <i class="bx bx-user-circle bx-sm text-white"></i>
     </div>
@@ -50,7 +52,7 @@
         {
             [AppConstants.MenuItems.Home] = "/",
             [AppConstants.MenuItems.Trips] = "/trips",
-            [AppConstants.MenuItems.Settings] = "/settings"
+            [AppConstants.MenuItems.Settings] = "/settings",
         };
 
     private bool IsHomeSelected => AppState.SelectedMenuItem == AppConstants.MenuItems.Home;
@@ -59,26 +61,30 @@
 
     protected override void OnInitialized()
     {
-        AppState.SelectedMenuItemChanged += OnSelectedMenuItemChanged;
+        AppState.PropertyChanged += OnAppStatePropertyChanged;
     }
 
-    private void OnSelectedMenuItemChanged(object? sender, string selectedMenu)
+    private void OnAppStatePropertyChanged(object? sender, PropertyChangedEventArgs e)
     {
-        StateHasChanged();
+        if (e.PropertyName == nameof(AppState.SelectedMenuItem))
+        {
+             StateHasChanged();
+        }
+       
     }
 
     private void GoToPage(string pageName)
     {
-        NavigationManager.NavigateTo(_pagesMap[pageName], replace: true);
+        NavigationManager.NavigateTo(_pagesMap[pageName], replace: true);     
     }
 
     private void GoToInnerPage(string url)
     {
-        NavigationManager.NavigateTo(url);
+        NavigationManager.GoToInnerPage(url);
     }
 
     public void Dispose()
     {
-        AppState.SelectedMenuItemChanged -= OnSelectedMenuItemChanged;
+        AppState.PropertyChanged -= OnAppStatePropertyChanged;
     }
 }

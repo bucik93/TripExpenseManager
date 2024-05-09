@@ -1,0 +1,19 @@
+﻿
+
+.top-navbar {
+    height: var(--navbar-height);
+    z-index: 10;
+    color: white;
+}
+
+.body-content {
+    padding-top: var(--navbar-height);
+    padding-bottom: calc(var(--navbar-height) + 20px);
+}
+
+
+
+.bx-md {
+    height: 5px;
+    margin-bottom: 30px;
+}

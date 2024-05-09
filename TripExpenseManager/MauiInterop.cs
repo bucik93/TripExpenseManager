@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CommunityToolkit.Maui.Alerts;
 
 namespace TripExpenseManager
 {
@@ -23,5 +24,11 @@ namespace TripExpenseManager
 
         public async Task ShowSuccesAlertAsync(string message, string? title = "Success") =>
           await App.Current.MainPage.DisplayAlert(title, message, "Ok");
+
+        public bool IsAndroid => DeviceInfo.Current.Platform == DevicePlatform.Android;
+        public bool IsIOS => DeviceInfo.Current.Platform == DevicePlatform.iOS;
+        public async Task ShowToastAsync(string message) => await Toast.Make(message, CommunityToolkit.Maui.Core.ToastDuration.Short).Show();
+            
+        
     }
 }

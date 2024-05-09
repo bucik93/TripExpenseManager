@@ -42,7 +42,20 @@
     }
     else
     {
-
+        <dvi class="row mt-3">
+            @foreach (var trip in _trips)
+            {
+                <div class="col-6" @onclick="() => GoToSingleTripPage(trip.Id)">
+                    <div class="card mb-3">
+                        <img src="@trip.CategoryImage" class="card-img-top img-fluid"/>
+                        <div class="card-body">
+                            <h6 class="card-title text-truncate text-dark">@trip.Title</h6>
+                            <p class="card-text fs-13 text-truncate text-dark">@trip.Location</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </dvi>
     }
 </div>
 
@@ -58,5 +71,6 @@
         MauiInterop.HideLoader();
     }
 
-    private void GoToAddTripPage() => NavigationManager.NavigateTo("/trips/add");
+    private void GoToAddTripPage() => NavigationManager.GoToInnerPage("/trips/add");
+    private void GoToSingleTripPage(int TripId) => NavigationManager.GoToInnerPage($"/trips/{TripId}");
 }

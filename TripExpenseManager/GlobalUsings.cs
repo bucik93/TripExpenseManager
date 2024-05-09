@@ -5,3 +5,4 @@ global using TripExpenseManager.Models;
 global using TripExpenseManager.Components.Layout;
 global using TripExpenseManager.ViewModels;
 global using TripExpenseManager.States;
+global using TripExpenseManager.Extensions;

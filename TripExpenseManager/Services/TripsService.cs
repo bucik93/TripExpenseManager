@@ -26,6 +26,7 @@ namespace TripExpenseManager.Services
 
         public async Task<MethodDataResult<Trip>> SaveTripAsync(Trip trip)
         {
+            trip.Status = Enum.Parse<TripStatus>(trip.DisplayStatus);
             try
             {
                 if (trip.Id == 0)
@@ -46,9 +47,15 @@ namespace TripExpenseManager.Services
             }
         }
 
-        public async Task<Trip?> GetTripAsync(int tripId) 
+        public async Task<Trip?> GetTripAsync(int tripId, bool includeExpense = false) 
         {
-            return await _context.FindAsync<Trip>(tripId);
+            var trip = await _context.FindAsync<Trip>(tripId);
+            if (includeExpense)
+            {
+                trip.Expenses = await _context.GetFileteredAsync<Expense>(e => e.TripId == tripId)
+                    ?? Enumerable.Empty<Expense>();
+            }
+            return trip;
         }
     }
 }

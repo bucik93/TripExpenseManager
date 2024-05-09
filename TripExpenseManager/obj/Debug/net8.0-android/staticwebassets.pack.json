@@ -29,8 +29,28 @@
       "PackagePath": "staticwebassets\\images\\chair.png"
     },
     {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\images\\chair3.png",
+      "PackagePath": "staticwebassets\\images\\chair3.png"
+    },
+    {
       "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\images\\city.png",
       "PackagePath": "staticwebassets\\images\\city.png"
+    },
+    {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\images\\island.png",
+      "PackagePath": "staticwebassets\\images\\island.png"
+    },
+    {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\images\\mountains.png",
+      "PackagePath": "staticwebassets\\images\\mountains.png"
+    },
+    {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\images\\nature.png",
+      "PackagePath": "staticwebassets\\images\\nature.png"
+    },
+    {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\images\\road.png",
+      "PackagePath": "staticwebassets\\images\\road.png"
     },
     {
       "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\images\\travel-and-tourism.png",
@@ -39,6 +59,14 @@
     {
       "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\images\\travel-beach.png",
       "PackagePath": "staticwebassets\\images\\travel-beach.png"
+    },
+    {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\images\\travel-beach3.png",
+      "PackagePath": "staticwebassets\\images\\travel-beach3.png"
+    },
+    {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\images\\travel-beach44.png",
+      "PackagePath": "staticwebassets\\images\\travel-beach44.png"
     },
     {
       "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\index.html",

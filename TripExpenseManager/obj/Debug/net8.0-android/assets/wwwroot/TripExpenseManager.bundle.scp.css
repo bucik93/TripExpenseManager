@@ -1,3 +1,23 @@
+/* /Components/Layout/InnerPagesLayout.razor.rz.scp.css */
+
+
+.top-navbar[b-wjdsxi9glt] {
+    height: var(--navbar-height);
+    z-index: 10;
+    color: white;
+}
+
+.body-content[b-wjdsxi9glt] {
+    padding-top: var(--navbar-height);
+    padding-bottom: calc(var(--navbar-height) + 20px);
+}
+
+
+
+.bx-md[b-wjdsxi9glt] {
+    height: 5px;
+    margin-bottom: 30px;
+}
 /* /Components/Layout/MainLayout.razor.rz.scp.css */
 
 
@@ -8,8 +28,9 @@
     
 }
 
-.body-content[b-tde58y4tub]{
-    padding-top: var(--navbar-height) ;
+.body-content[b-tde58y4tub] {
+    padding-top: var(--navbar-height);
+    padding-bottom: calc(var(--navbar-height) + 20px);
 }
 
 .bottom-tabbar[b-tde58y4tub]{

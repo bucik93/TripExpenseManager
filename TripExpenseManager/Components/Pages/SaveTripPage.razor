@@ -1,19 +1,21 @@
 ﻿@page "/trips/add"
+@layout InnerPagesLayout
 
 @inject TripsService TripsService
 @inject NavigationManager NavigationManager
 @inject MauiInterop MauiInterop
 @inject DropDownsService DropDownsService
+@inject AppState AppState
 
 <style type="text/css" scoped>
     .img-container {
-/*         background-image: url('images/travel-beach.png');
- */        background-color: dodgerblue;
+        /*         background-image: url('images/travel-beach.png');
+         */ background-color: dodgerblue;
         background-position-y: -100px;
         height: 250px;
     }
 
-    .form-container {
+/*     .form-container {
         background-color: transparent;
         margin-top: -200px;
         padding: 25px 10px;
@@ -25,7 +27,7 @@
         border-radius: 40px 40px 0 0;
         min-height: calc(100vh - 200px);
         padding: 15px;
-    }
+    } */
 
     .category-img {
         width: 25px;
@@ -40,12 +42,9 @@
 
 <div class="img-container m-0 p-0 vw-100"></div>
 
-<EditForm Model="_model">
+<EditForm Model="_model" OnValidSubmit="SaveTripAsync">
     <DataAnnotationsValidator />
-    <div class="form-container">
-        <div class="form-body bg-white shadow d-flex flex-column">
-            <h3 class="mt-3 text-center">Add a Trip</h3>
-            <div class="mt-3 flex-grow-1">
+    <FormContent Heading="Add a Trip" ButtonText="Save Trip">
                 <div class="mb-3">
                     <label class="form-label">Category</label>
                     <InputText type="hidden" @bind-Value="_model.CategoryImage" />
@@ -55,22 +54,23 @@
                             var iconClass = "bx-check-circle text-muted";
                             var borderClass = "";
                             var nameClass = "text-muted";
-                            if(_model.CategoryImage == category.Image)
+                            if (_model.CategoryImage == category.Image)
                             {
                                 iconClass = "bxs-check-circle text-success";
                                 borderClass = "border-success shadow";
                                 nameClass = "text-dark";
                             }
 
-                            <div class="rounded ps-1 vstack text-center border m-1 @borderClass" 
-                            @onclick="() => ToggleCategorySelection(category)">
+                            <div class="rounded ps-1 vstack text-center border m-1 @borderClass"
+                                 @onclick="() => ToggleCategorySelection(category)">
                                 <i class="position-absolute bx @iconClass"></i>
                                 <img class="mx-auto category-img" src="@category.Image" />
                                 <label class="category-label @nameClass">@category.Name</label>
                             </div>
                         }
-                        <ValidationMessage For="() => _model.CategoryImage" />
                     </div>
+            <ValidationMessage For="() => _model.CategoryImage" />
+
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Trip name</label>
@@ -107,24 +107,10 @@
                             <option value="@status">@status</option>
                         }
                     </InputSelect>
-                    <ValidationMessage For="() => _model.DisplayStatus" />
+                    <ValidationMessage For="() => _model.Status" />
                 </div>
-            </div>
-            <div class="row my-3">
-                <div class="col-1"></div>
-                <div class="col-2">
-                    <button type="button" class="btn btn-outline-danger shadow">
-                        <i class="bx bx-x"></i>
-                    </button>
-                </div>
-                <div class="col-1"></div>
-                <div class="col-7">
-                    <button type="submit" class="btn btn-primary rounded-pill shadow">Save Trip</button>
-                </div>
-                <div class="col-1"></div>
-            </div>
-        </div>
-    </div>
+            
+    </FormContent>  
 </EditForm>
 
 
@@ -136,6 +122,8 @@
 
     protected override async Task OnInitializedAsync()
     {
+        AppState.SetInnerPageTitle("Add a trip");
+
         MauiInterop.ShowLoader();
 
         _locationCategories = await DropDownsService.GetLocationCategoriesAsync();
@@ -147,13 +135,39 @@
 
     private void ToggleCategorySelection(LocationCategory category)
     {
-        if(_model.CategoryImage == category.Image)
+        if (_model.CategoryImage == category.Image)
         {
             _model.CategoryImage = String.Empty;
         }
         else
         {
             _model.CategoryImage = category.Image;
+        }
+    }
+
+    private async Task SaveTripAsync()
+    {
+        MauiInterop.ShowLoader();
+        try
+        {
+            var result = await TripsService.SaveTripAsync(_model);
+            if (result.IsSuccess)
+            {
+                await MauiInterop.ShowToastAsync("Trip saved");
+                NavigationManager.GoBack();
+            }
+            else
+            {
+                await MauiInterop.ShowSuccesAlertAsync(result.Error ?? "Error while saving trip");
+            }
+        }
+        catch (Exception ex)
+        {
+            await MauiInterop.ShowSuccesAlertAsync(ex.Message);
+        }
+        finally
+        {
+            MauiInterop.HideLoader();
         }
     }
 

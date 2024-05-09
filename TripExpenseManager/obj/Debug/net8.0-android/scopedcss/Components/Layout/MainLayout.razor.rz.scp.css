@@ -7,8 +7,9 @@
     
 }
 
-.body-content[b-tde58y4tub]{
-    padding-top: var(--navbar-height) ;
+.body-content[b-tde58y4tub] {
+    padding-top: var(--navbar-height);
+    padding-bottom: calc(var(--navbar-height) + 20px);
 }
 
 .bottom-tabbar[b-tde58y4tub]{

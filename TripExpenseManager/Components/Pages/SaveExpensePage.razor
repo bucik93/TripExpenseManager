@@ -1,0 +1,29 @@
+﻿@page "/trips/{tripId:int}/expenses/add"
+
+@layout InnerPagesLayout
+
+
+@inject TripsService TripsService
+@inject NavigationManager NavigationManager
+@inject MauiInterop MauiInterop
+@inject DropDownsService DropDownsService
+@inject AppState AppState
+<p>Cos</p>
+
+@code {
+    [Parameter]
+    public int TripId { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {   
+        AppState.SetInnerPageTitle("Add Expense");
+        StateHasChanged();
+        MauiInterop.ShowLoader();
+
+        //_locationCategories = await DropDownsService.GetLocationCategoriesAsync();
+        //_statuses = DropDownsService.GetTripStatuses();
+
+        MauiInterop.HideLoader();
+    }
+
+}
