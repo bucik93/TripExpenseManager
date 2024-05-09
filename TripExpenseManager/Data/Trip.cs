@@ -21,7 +21,7 @@ namespace TripExpenseManager.Data
         //public TripStatus Status { get; set; } = TripStatus.Palnned;
 
         private TripStatus _status = TripStatus.Palnned;
-        public TripStatus Status 
+        public TripStatus Status
         {
             get => _status;
             set
@@ -36,6 +36,14 @@ namespace TripExpenseManager.Data
         public string DisplayStatus { get; set; }
         [Ignore]
         public IEnumerable<Expense> Expenses { get; set; }
+        [Ignore]
+        public string StatusBgColor => Status switch
+        {
+            TripStatus.Palnned => "bg-secondary",
+            TripStatus.OnGoing => "bg-success",
+            TripStatus.Completed => "bg-primary",
+            TripStatus.Cancelled => "bg-danger"
+        };
 
     }
 }

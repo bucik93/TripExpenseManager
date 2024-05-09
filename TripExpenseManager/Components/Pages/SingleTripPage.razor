@@ -10,6 +10,10 @@
     .location {
         border-radius: 20px;
     }
+
+    .badge{
+        margin-left: 10px;
+    }
 </style>
 @if (_trip is not null)
 {
@@ -27,7 +31,7 @@
         <div class="location bg-white shadow vw-95 px-3 py-2">
             <div class="d-flex justify-content-between align-items-center">
                 <h3 class="text-dark">@_trip.Title</h3>
-                <span class="rounded-pill @statusColor text-white m-0 px-2 fs-12">@_trip.DisplayStatus</span>
+                <span class="rounded-pill @_trip.StatusBgColor text-white m-0 px-2 fs-12">@_trip.DisplayStatus</span>
             </div>
             <div class="vstack">
                 <label class="m-0 px-2 py-1 text-dark">
@@ -69,7 +73,30 @@
         }
         else
         {
+            <div class="row mt-3">
+                @foreach (var expense in _trip.Expenses)
+                {
+                    <div class="col-12" @onclick="()=> GoToEditExpensePage(expense.Id)">
+                        <div class="card my-2 p-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="v-stack">
+                                    <h4 class="text-dark">@expense.For<span class="badge bg-primary">@expense.Category</span></h4>
+                                    <label class="text-dark">
+                                        <i class="bx bx-calendar me-2"></i>
+                                        <span class="text-dark">@expense.SpentOn?.ToShortDateString()</span>
+                                    </label>
+                                </div>
 
+                                <h3 class="text-dark">
+                                    @expense.Amount.ToString("c")
+                                </h3>
+
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            </div>
         }
     </div>
 }
@@ -81,13 +108,19 @@
     private double _totalExpense = 0;
     protected override async Task OnInitializedAsync()
     {
+        AppState.AddTabBarItems(new TabBarItem("bx-edit bx-sm", () => GoToEditTripPage()));
+
         MauiInterop.ShowLoader();
         _trip = await TripsService.GetTripAsync(TripId, includeExpense: true);
-        AppState.SetInnerPageTitle(_trip.Title);     
+        AppState.SetInnerPageTitle(_trip.Title);
         _totalExpense = _trip.Expenses.Sum(e => e.Amount);
         StateHasChanged();
         MauiInterop.HideLoader();
     }
 
     private void GoToAddExpensePage() => NavigationManager.GoToInnerPage($"/trips/{TripId}/expenses/add");
+    private void GoToEditExpensePage(long expenseId) => NavigationManager.GoToInnerPage($"/trips/{TripId}/expenses/{expenseId}/edit");
+    private void GoToEditTripPage() => NavigationManager.GoToInnerPage($"/trips/{TripId}/edit");
+
+    
 }

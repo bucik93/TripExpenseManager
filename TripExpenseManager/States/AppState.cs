@@ -31,6 +31,19 @@ namespace TripExpenseManager.States
                 Notify();
             }
         }
+
+        public TabBarItem[] TabBarItems { get; set; } = Array.Empty<TabBarItem>();
+
+        public void AddTabBarItems(params TabBarItem[] tabBarItems)
+        {
+            TabBarItems = tabBarItems;
+            Notify(nameof(TabBarItems));
+        }
+
+        public void NoTabBarItems()
+        {
+            AddTabBarItems(Array.Empty<TabBarItem>());
+        }
         public void SetSelectedMenuItem(string pageName)
         {
             SelectedMenuItem = pageName;

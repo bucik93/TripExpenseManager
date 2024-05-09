@@ -57,5 +57,29 @@ namespace TripExpenseManager.Services
             }
             return trip;
         }
+
+        public async Task<MethodDataResult<Expense>> SaveExpenseAsync(Expense expense)
+        {
+            try
+            {
+                if (expense.Id == 0)
+                {
+                    //create
+                    await _context.AddItemAsync<Expense>(expense);
+                }
+                else
+                {
+                    //modify
+                    await _context.UpdateItemAsync<Expense>(expense);
+                }
+                return MethodDataResult<Expense>.Success(expense);
+            }
+            catch (Exception ex)
+            {
+                return MethodDataResult<Expense>.Fail(ex.Message);
+            }
+        }
+
+        public async Task<Expense> GetExpenseAsync(long expense) => await _context.FindAsync<Expense>(expense);
     }
 }

@@ -24,5 +24,8 @@ namespace TripExpenseManager.Services
         {
             return Enum.GetNames<TripStatus>();
         }
+
+        public async Task<string[]> GetExpenseCategoriesAsync() => (await _context.GetAllAsync<ExpenseCategory>()).Select(e => e.Name).ToArray();
     }
 }
+

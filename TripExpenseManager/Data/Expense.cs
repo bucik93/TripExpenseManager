@@ -12,7 +12,7 @@ namespace TripExpenseManager.Data
         public int TripId { get; set; }
         [Required, MaxLenght(100)]
         public string For { get; set; }
-        [Range(0.1, double.MaxValue)]
+        [Range(0.1, double.MaxValue, ErrorMessage ="Please enter valid amount")]
         public double Amount { get; set; }
         [Required]
         public string Category { get; set; }

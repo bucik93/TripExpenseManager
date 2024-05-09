@@ -11,7 +11,16 @@
         <h3 class="m-0 w-100 @(MauiInterop.IsIOS ? "text-center" : "text-start")">
             @AppState.PageTitle
         </h3>
-        <i class="bx bx-user-circle bx-sm text-white"></i>
+        @*   <i class="bx bx-user-circle bx-sm text-white"></i> *@
+        @if(AppState.TabBarItems.Length > 0)
+        {
+        <label>
+            @foreach (var tabBarItem in AppState.TabBarItems)
+            {
+                <i class="bx text-white @tabBarItem.Icon" @onclick="@tabBarItem.OnTap"/>
+            }
+        </label>
+        }
     </div>
 </div>
 <div class="body-content">
@@ -66,16 +75,16 @@
 
     private void OnAppStatePropertyChanged(object? sender, PropertyChangedEventArgs e)
     {
-        if (e.PropertyName == nameof(AppState.SelectedMenuItem))
+        if (e.PropertyName == nameof(AppState.SelectedMenuItem) || e.PropertyName == nameof(AppState.TabBarItems))
         {
-             StateHasChanged();
+            StateHasChanged();
         }
-       
+
     }
 
     private void GoToPage(string pageName)
     {
-        NavigationManager.NavigateTo(_pagesMap[pageName], replace: true);     
+        NavigationManager.NavigateTo(_pagesMap[pageName], replace: true);
     }
 
     private void GoToInnerPage(string url)

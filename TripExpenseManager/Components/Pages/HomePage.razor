@@ -66,6 +66,8 @@
     protected override async Task OnInitializedAsync()
     {
         AppState.SetSelectedMenuItem(AppConstants.MenuItems.Home);
+        AppState.AddTabBarItems(new TabBarItem("bx-user-circle bx-sm", () => NavigationManager.NavigateTo("/settings")));
+
         MauiInterop.ShowLoader();
         _trips = await TripsService.GetTripsAsync(1, 6);
         MauiInterop.HideLoader();

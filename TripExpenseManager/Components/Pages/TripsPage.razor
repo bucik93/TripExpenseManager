@@ -1,10 +1,75 @@
 ﻿@page "/trips"
+@inject TripsService TripsService
+@inject NavigationManager NavigationManager
+@inject MauiInterop MauiInterop
+@inject DropDownsService DropDownsService
 @inject AppState AppState
-<h3>Trips</h3>
 
+<style type="text/css" scoped>
+    .empty-trips-container {
+        height: calc(100vh - var(--navbar-height));
+    }
+    .trip-img{
+        width: 100px;
+    }
+</style>
+<div class="container">
+    @if (!_trips.Any())
+    {
+        <div class="empty-trips-container d-flex w-100 flex-column align-items-center justify-content-center">
+            <label class="text-muted fs-4 mb-2">You haven't added any trip yet</label>
+            <button type="button" class="btn btn-secondary rounded-pill" @onclick="GoToAddTripPage">
+                <i class="bx bx-plus m-0 p-0">
+                    <span>Add a trip</span>
+                </i>
+            </button>
+        </div>
+    }
+    else
+    {
+        <dvi class="row py-3">
+            @foreach (var trip in _trips)
+            {
+                <div class="col-12 mb-3" >
+                    <div class="card" @onclick="() => GoToSingleTripPage(trip.Id)">
+                        <div class="hstack gap-3">
+                            <img src="@trip.CategoryImage" class="trip-img text-dark" />
+                            <div class="vr"></div>
+                            <div class="vstack p-2">
+                                <div class="d-flex justify-content-between  align-items-center">
+                                    <h3 class="text-dark">@trip.Title</h3>
+                                    <span class="rounded-pill @trip.StatusBgColor  m-0 px-2 fs-12">@trip.DisplayStatus</span>
+                                </div>
+                                <label class="m-0 px-2 py-1">
+                                    <i class="bx bx-map p-0 me-2 text-dark"></i>
+                                    <span class="text-dark">@trip.Location</span>
+                                </label>
+                                <label class="m-0 px-2 py-1">
+                                    <i class="bx bx-calendar p-0 me-2 text-dark"></i>
+                                    <span class="text-dark">@trip.FromDate?.ToShortDateString() - @trip.ToDate?.ToShortDateString()</span>
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            }
+        </dvi>
+    }
+</div>
 @code {
+    private IEnumerable<Trip> _trips = Enumerable.Empty<Trip>();
     protected override async Task OnInitializedAsync()
     {
+
+        AppState.AddTabBarItems(new TabBarItem("bx-plus bx-sm", () => GoToAddTripPage()));
         AppState.SetSelectedMenuItem(AppConstants.MenuItems.Trips);
+        MauiInterop.ShowLoader();
+        _trips = await TripsService.GetTripsAsync(1, 1000);
+        MauiInterop.HideLoader();
     }
+    private void GoToAddTripPage() => NavigationManager.GoToInnerPage("/trips/add");
+    private void GoToSingleTripPage(int TripId) => NavigationManager.GoToInnerPage($"/trips/{TripId}");
+
+
 }
