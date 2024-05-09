@@ -1,17 +1,98 @@
 ﻿@page "/settings"
+@inject TripsService TripsService
+@inject NavigationManager NavigationManager
+@inject MauiInterop MauiInterop
+@inject DropDownsService DropDownsService
 @inject AppState AppState
+@inject AuthService AuthService
 
-<h3 style="color:red;">Settings</h3>
-<h3 style="color:red;">Settings</h3>
-<h3 style="color:red;">Settings</h3>
-<h3 style="color:red;">Settings</h3>
-<h3 style="color:red;">Settings</h3>
-<h3 style="color:red;">Settings</h3>
-<h3 style="color:red;">Settings</h3>
+<style type="text/css" scoped>
+    .h-remaining{
+        height: calc(100vh - var(--navbar-height) - 100px);
+    }
+    .avatar{
+        height: 80px;
+        width: 80px;
+        font-size: 50px;
+    }
+
+    .signout{
+        margin-bottom: 15px;
+    }
+</style>
+
+<div class="container p-3">
+    <div class="d-flex flex-column justify-content-center align-items-center h-remaining">
+        <label class="rounded-circle text-uppercase bg-success bg-gradient text-dark text-center fw-bold shadow-lg avatar">
+            @AuthService.CurrentUser.Name?[0]
+        </label>
+        <div class="flex-grow-1 my-3 py-2 w-100 d-flex align-items-center">
+            <ul class="list-group list-group-flush w-100">
+                <li class="list-group-item" @onclick="ChangeNameAsync">
+                    <div class="hstack gap-3">
+                        <i class="bx bx-sm bx-user"></i>
+                        <span>My Profile</span>
+                    </div>
+                </li>
+                    <li class="list-group-item" @onclick="ChangePasswordAsync">
+                    <div class="hstack gap-3">
+                        <i class="bx bx-sm bx-lock"></i>
+                        <span>Change Password</span>
+                    </div>
+                </li>
+                <li class="list-group-item" @onclick="GoToManageExpenseCategoriesPage">
+                    <div class="hstack gap-3">
+                        <i class="bx bx-sm bx-grid"></i>
+                        <span>Manage Expense Categories</span>
+                    </div>
+                </li>
+           
+            </ul>
+        </div>
+        <label class="bg-danger rounded-pill py-1 px-3 text-white m-3 d-flex align-items-center" @onclick="()=> SignOut()">
+            <i class="bx bx-log-out m-0 p-0 me-2"></i>
+            <span>Signout</span>
+        </label>
+    </div>
+</div>
 
 @code {
     protected override async Task OnInitializedAsync()
     {
         AppState.SetSelectedMenuItem(AppConstants.MenuItems.Settings);
+        AppState.NoTabBarItems();
+    }
+
+    private void SignOut()
+    {
+        AuthService.SignOut();
+        NavigationManager.NavigateTo("/signin", replace:true);
+    }
+
+    private async Task ChangeNameAsync()
+    {
+        var newName = await MauiInterop.ShowProptAsync("Your Name", "Enter your name", "Save", AuthService.CurrentUser.Name);
+        if (!string.IsNullOrWhiteSpace(newName))
+        {
+            MauiInterop.ShowLoader();
+            await AuthService.ChangeNameAsync(newName);
+            MauiInterop.HideLoader();
+        }
+    }
+
+    private async Task ChangePasswordAsync()
+    {
+        var newPassword = await MauiInterop.ShowProptAsync("Change Password", "Enter new password", "Save New Password", string.Empty);
+        if (!string.IsNullOrWhiteSpace(newPassword))
+        {
+            MauiInterop.ShowLoader();
+            await AuthService.ChangePasswordAsync(newPassword);
+            MauiInterop.HideLoader();
+        }
+    }
+
+    private void GoToManageExpenseCategoriesPage()
+    {
+        NavigationManager.GoToInnerPage("/manage-expense-categories");
     }
 }

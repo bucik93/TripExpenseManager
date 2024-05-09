@@ -28,6 +28,10 @@ namespace TripExpenseManager
         public bool IsAndroid => DeviceInfo.Current.Platform == DevicePlatform.Android;
         public bool IsIOS => DeviceInfo.Current.Platform == DevicePlatform.iOS;
         public async Task ShowToastAsync(string message) => await Toast.Make(message, CommunityToolkit.Maui.Core.ToastDuration.Short).Show();
+        public async Task<string?> ShowProptAsync(string title, string message, string okButtonText, string placeholder)
+        {
+            return await App.Current.MainPage.DisplayPromptAsync(title, message, okButtonText, placeholder: placeholder);
+        }
             
         
     }

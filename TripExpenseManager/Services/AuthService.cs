@@ -20,6 +20,7 @@ namespace TripExpenseManager.Services
         }
 
         public bool IsSignedIn => Preferences.ContainsKey(LoggedInKey);
+        public LoggedInUser CurrentUser => LoggedInUser.LoadFromJson(_preferences.Get<string>(LoggedInKey, string.Empty));
 
         public async Task<MethodResult> SignUpAsync(SignUpModel model)
         {
@@ -60,6 +61,21 @@ namespace TripExpenseManager.Services
         public void SignOut()
         {
             _preferences.Remove(LoggedInKey);
+        }
+
+        public async Task ChangeNameAsync(string newName)
+        {
+            var dbUser = await _context.FindAsync<User>(CurrentUser.Id);
+            dbUser.Name = newName;
+            await _context.UpdateItemAsync(dbUser);
+            SetUser(dbUser);
+        }
+
+        public async Task ChangePasswordAsync(string newPassword)
+        {
+            var dbUser = await _context.FindAsync<User>(CurrentUser.Id);
+            dbUser.Password = newPassword;
+            await _context.UpdateItemAsync(dbUser);
         }
     }
 }
