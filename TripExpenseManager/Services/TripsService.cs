@@ -81,5 +81,19 @@ namespace TripExpenseManager.Services
         }
 
         public async Task<Expense> GetExpenseAsync(long expense) => await _context.FindAsync<Expense>(expense);
+
+        public async Task<MethodResult> SaveExpenseCategoryAsync(string categoryName)
+        {
+            var dbCategory = await _context.FindAsync<ExpenseCategory>(categoryName);
+            if(dbCategory is not null)
+            {
+                return MethodResult.Fail($"Category [{categoryName}] exist already");
+            }
+            else
+            {
+                await _context.AddItemAsync<ExpenseCategory>(new ExpenseCategory (categoryName));
+                return MethodResult.Success();
+            }
+        }
     }
 }

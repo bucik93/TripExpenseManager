@@ -34,7 +34,8 @@
 }
 
 .bottom-tabbar[b-tde58y4tub]{
-    bottom: 5px;
+    bottom: -10px;
+    width: 100%;
     z-index: 10;
 }
 
@@ -48,3 +49,6 @@
     margin-bottom: 30px;
 }
 
+.tabbar-rounded[b-tde58y4tub] {
+    border-radius: 0px 0px 0px 0px;
+}

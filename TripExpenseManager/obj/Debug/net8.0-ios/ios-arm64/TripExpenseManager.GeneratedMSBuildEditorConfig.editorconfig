@@ -64,6 +64,20 @@ build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbmRleC5yYXpv
 build_metadata.AdditionalFiles.RelativePath = 
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/REPO GITHUB PROJEKTY PLURALSIGHT/TripExpenseManager/TripExpenseManager/TripExpenseManager/Components/Pages/ManageExpenseCategoriesPage.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNYW5hZ2VFeHBlbnNlQ2F0ZWdvcmllc1BhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/REPO GITHUB PROJEKTY PLURALSIGHT/TripExpenseManager/TripExpenseManager/TripExpenseManager/Components/Pages/SaveExpensePage.razor]
+build_metadata.AdditionalFiles.GenKind = 
+build_metadata.AdditionalFiles.ManifestResourceName = 
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTYXZlRXhwZW5zZVBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.RelativePath = 
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/REPO GITHUB PROJEKTY PLURALSIGHT/TripExpenseManager/TripExpenseManager/TripExpenseManager/Components/Pages/SaveTripPage.razor]
 build_metadata.AdditionalFiles.GenKind = 
 build_metadata.AdditionalFiles.ManifestResourceName = 

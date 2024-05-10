@@ -13,7 +13,8 @@
 }
 
 .bottom-tabbar{
-    bottom: 5px;
+    bottom: -10px;
+    width: 100%;
     z-index: 10;
 }
 
@@ -27,3 +28,6 @@
     margin-bottom: 30px;
 }
 
+.tabbar-rounded {
+    border-radius: 0px 0px 0px 0px;
+}

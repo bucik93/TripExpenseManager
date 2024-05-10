@@ -28,7 +28,7 @@
 </div>
 
 <div class="d-flex justify-content-center w-100">
-    <div class="d-flex justify-content-between align-items-center vw-90 p-2 mx-1 my-2 bg-dark bg-gradient position-fixed rounded-pill shadow-lg bottom-tabbar">
+    <div class="d-flex justify-content-between align-items-center vw-90 p-2 mx-1 my-2 bg-dark bg-gradient position-fixed tabbar-rounded shadow-lg bottom-tabbar">
         <label class="rounded-pill px-3 py-1 m-0 text-white d-flex flex-column align-items-center
         @(IsHomeSelected ? "shadow-lg" : "light-white")"
                onclick="@(() => GoToPage(AppConstants.MenuItems.Home))">
@@ -43,6 +43,7 @@
         </label>
         <label class="rounded-pill px-3 py-1 light-white m-0 d-flex flex-column align-items-center" onclick="@(() => GoToInnerPage("/trips/add"))">
             <i class="bx bx-plus-circle bx-md"></i>
+            <span class="fs-12">Add</span>
         </label>
         <label class="rounded-pill px-3 py-1 m-0 text-white d-flex flex-column align-items-center
         @(IsSettingsSelected ? "shadow-lg" : "light-white")"

@@ -58,6 +58,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Content Remove="Components\Pages\ManageExpenseCategoriesPage.razor" />
       <Content Remove="Components\Pages\SaveExpensePage.razor" />
     </ItemGroup>
 
@@ -80,11 +81,17 @@
     </ItemGroup>
 
     <ItemGroup>
+      <_ContentIncludedByDefault Remove="Components\Pages\ManageExpenseCategoriesPage.razor" />
       <_ContentIncludedByDefault Remove="Components\Pages\SaveExpensePage.razor" />
     </ItemGroup>
 
     <ItemGroup>
+      <None Include="Components\Pages\ManageExpenseCategoriesPage.razor" />
       <None Include="Components\Pages\SaveExpensePage.razor" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <UpToDateCheckInput Remove="Components\Pages\ManageExpenseCategoriesPage.razor" />
     </ItemGroup>
 
 </Project>

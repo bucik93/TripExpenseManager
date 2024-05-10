@@ -1,0 +1,60 @@
+﻿@page "/manage-expense-categories"
+
+@layout InnerPagesLayout
+@inject TripsService TripsService
+@inject NavigationManager NavigationManager
+@inject MauiInterop MauiInterop
+@inject DropDownsService DropDownsService
+@inject AppState AppState
+
+
+<div class="container p-3">
+    <div class="row">
+        <div class="col-12">
+            <ul class="list-group">
+                @foreach (var category in _categories)
+                {
+                    <li class="list-group-item">@category</li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    private string[] _categories = Array.Empty<string>();
+    protected override async Task OnInitializedAsync()
+    {
+        MauiInterop.ShowLoader();
+        AppState.SetInnerPageTitle("Manage Categories");
+        AppState.AddTabBarItems(new TabBarItem("bx bx-sm bx-plus", () => AddNewCategoryAsync()));
+        await LoadCategoriesAsync();
+    }
+    private async Task LoadCategoriesAsync(){
+        MauiInterop.ShowLoader();
+        _categories = await DropDownsService.GetExpenseCategoriesAsync();
+        MauiInterop.HideLoader();
+    }
+
+    public async Task AddNewCategoryAsync()
+    {
+        var newCategory = await MauiInterop.ShowProptAsync("Expense Category", "Enter new expense category name", "Save", "Enter category name");
+
+        if (!string.IsNullOrWhiteSpace(newCategory))
+        {
+            MauiInterop.ShowLoader();
+            var result = await TripsService.SaveExpenseCategoryAsync(newCategory);
+            MauiInterop.HideLoader();
+            if (!result.IsSuccess)
+            {
+                await MauiInterop.ShowErrorAlertAsync(result.Error ?? "Error in saving expense category");
+            }
+            else{
+                await LoadCategoriesAsync();
+                StateHasChanged();
+            }
+        }
+
+    }
+}
