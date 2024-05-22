@@ -6,6 +6,7 @@
 @inject MauiInterop MauiInterop
 @inject DropDownsService DropDownsService
 @inject AppState AppState
+
 <div class="main-container">
     <div class="container">
         <div class="details-container select-none">
@@ -28,13 +29,90 @@
             <span class="wave active" style="--i: 0.2s"></span>
             <span class="wave active" style="--i: 0s"></span>
         </div>
+        <div class="button-pallet">
+            <div class="controllers">
+                <div class="song-controller">
+                    <p id="currentTime" class="time select-none">00:00</p>
+                    <input type="range" name="seekBar" id="seekBar" value="0" >
+                    <p id="currentTime" class="time select-none">00:00</p>
+                </div>
+                <div class="buttons">
+                    <button type="button" class="btn btn1 refresh">
+                        <i class="fa solid fa-rotate-right"></i>
+                    </button>
+                        <button type="button" class="btn btn2 backward">
+                        <i class="fa solid fa-backward-step"></i>
+                    </button>
+                        <button type="button" class="btn play-btn1">
+                        <i class="fa solid fa-play"></i>
+                    </button>
+                        <button type="button" class="btn btn2 forward">
+                        <i class="fa solid fa-forward-step"></i>
+                    </button>
+                    <button type="button" class="btn btn1 repeat">
+                        <i class="fa solid fa-repeat"></i>
+                    </button>
+                </div>
+                <div class="volume-controller">
+                    <div id="volumeIcon">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                    <input type="range" name="volumeBar" id="volumeBar" min="0" max="1" step="0.01" value="1" >
+                    <div>
+                        <p id="volumeValue">100%</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn2">
+                <i class="fa-solid fa-chevron-up"></i>
+            </button>
+        </div>
+        <div id="songList" class="song-list active">
+            <button type="button" class="btn btn2">
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="songs">
+                <ul id="list" class="list">
+                    <li class="item">
+                        <div class="details">                            
+                            <img src="/assets/logo.jpg" />
+                            <h5>Lorem, ipsum door.</h5>
+                        </div>
+                        <button type="button" class="btn play-btn2">
+                            <i class="fa solid fa-play"></i>
+                        </button>
+                    </li>
+                        <li class="item">
+                        <div class="details">                            
+                            <img src="/assets/logo.jpg" />
+                            <h5>Lorem, ipsum door.</h5>
+                        </div>
+                        <button type="button" class="btn play-btn2">
+                            <i class="fa solid fa-play"></i>
+                        </button>
+                    </li>
+                    <li class="item">
+                        <div class="details">
+                            <img src="/assets/logo.jpg" />
+                            <h5>Lorem, ipsum door.</h5>
+                        </div>
+                        <button type="button" class="btn play-btn2">
+                            <i class="fa solid fa-play"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="btn import-btn">Import Music</button>
+        </div>
     </div>
 </div>
 
 @code {
+
     protected override async Task OnInitializedAsync()
     {
         MauiInterop.ShowLoader();
+
         AppState.SetInnerPageTitle("Music Player");
         AppState.AddTabBarItems(new TabBarItem("", null));
 
@@ -44,6 +122,7 @@
 
 
 <style type="text/css" scoped>
+
     @@import url ('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
     :root {
@@ -65,18 +144,37 @@
         justify-content: center;
     }
 
+    input[type="range"] {
+        -webkit-appearance: none;
+        height: 3px;
+        width: 100%;
+        background-color: var(--primary);
+        border-radius: 10px;
+        box-shadow: 0 0 5px var(--primary);
+        cursor: pointer;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 10px;
+        width: 10px;
+        background-color: var(--primary);
+        border-radius: 50%;
+        box-shadow: 0 0 10px var(--primary);
+    }
+
     .main-container {
         position: relative;
         /*     width: 380px;
-                    height: 660px; */
-        height: 660px;
+                                height: 660px; */
+        /* height: 660px; */
         background: linear-gradient( to top left, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('assets/bg.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         /*  border-radius: 36px; */
-        box-shadow: 0 35px 55px rgba(0,0,0,0.8);
-        display: flex;
+/*         box-shadow: 0 5px 5px rgba(0,0,0,0.9);
+ */        display: flex;
         flex-direction: column;
         overflow: hidden;
     }
@@ -128,20 +226,226 @@
             box-shadow: 0 0 10px var(--primary);
         }
 
-        .wave-container .wave.active {
-           animation: animateWave 1s infinite ease-in-out;
-           animation-delay: var(--i);
-        }
+            .wave-container .wave.active {
+                animation: animateWave 1s infinite ease-in-out;
+                animation-delay: var(--i);
+            }
 
-        @@keyframes animateWave{
-        0%{
+    @@keyframes animateWave {
+        0% {
             height: 5px;
         }
-        50%{
-             height: 40px;
+
+        50% {
+            height: 40px;
         }
-        100%{
-             height: 5px;
+
+        100% {
+            height: 5px;
         }
+    }
+
+    .button-pallet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 22px;
+        height: max-content;
+        padding: 16px 36px;
+    }
+
+    .controllers {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 24px;
+    }
+
+        .controllers .song-controller {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            column-gap: 8px;
         }
+
+        .controllers .song-controller .time {
+            width: 70px;
+            text-align: center;
+            color: var(--primary);
+            font-size: 14px;
+        }
+
+        .controllers .song-controller input {
+            flex-grow: 1;
+        }
+
+    .controllers .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 24px;
+    }
+
+    .btn {
+        border: none;
+        outline: none;
+        background: none;
+        color: rgba(255,255,255, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .btn:hover {
+        transform: scale(1.04);
+    }
+
+        .btn:active {
+            transform: scale(1.02);
+        }
+
+        .btn.btn1 {
+            font-size: 16px;
+        }
+
+        .btn.btn2 {
+            font-size: 20px;
+            color: var(--primary);
+        }
+
+        .btn.play-btn1 {
+            width: 60px;
+            height: 60px;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            font-size: 28px;
+            box-shadow: 0 0 10px var(--primary);
+        }
+
+        .btn.refresh:hover {
+            color: var(--primary);
+        }
+
+        .btn.repeat.active {
+            color: var(--primary);
+        }
+
+    .controllers .volume-controller {
+        width: 160px;
+         display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 8px;
+    }
+
+    .controllers .volume-controller div {
+            width: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 12px;
+            text-shadow: 0 0 2px var(--primary);
+    }
+
+    .song-list {
+        position: absolute;
+        bottom: -430px;
+        left:0;
+        width: 100%;
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 16px;
+        padding: 16px;
+        background: linear-gradient(to top left, rgba(0,0,0,0.15), rgba(255,255,255,0.1));
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-radius: 36px 36px 0 0;
+        box-shadow: 0 -2px 2px rgba(255,255,255, 0.4);
+        transition: transform 0.5s ease-in-out;
+        z-index: 20;
+    }
+
+    .song-list.active {
+        bottom: 0;
+    }
+
+    .song-list .songs {
+        width: 100%;
+        flex-grow: 1;
+        overflow-y: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+    }
+
+        .song-list .songs::-webkit-scrollbar {
+            display: none;            
+        }
+
+        .song-list .songs .list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+            padding: 0 8px;
+        }
+
+            .song-list .songs .list .item {
+                list-style: none;
+                background: rgba(255,255,255,0.05);
+                backdrop-filter: blur(4px);
+                -webkit-backdrop-filter: blur(4px);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 8px;
+                padding-right: 16px;
+                border-radius: 10px;
+                color: var(--primary);
+                transition: transform 0.2s;
+                cursor:pointer;
+            }
+
+                .song-list .songs .list .item:hover {
+                    transform: scale(1.02);
+                }
+
+                .song-list .songs .list .item .details {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 12px;
+                }
+
+                    .song-list .songs .list .item .details img {
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 5px;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                        .song-list .songs .list .item .details h5 {
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: var(--primary);
+                        }
+
+                .song-list .songs .list .item .play-btn2 {
+                    font-size: 24px;
+                        color: var(--primary);
+                }
+
+    .song-list .import-btn{
+            font-size: 16px;
+            color: var(--primary);
+            text-shadow: 0 0 5px var(--primary);
+    }
 </style>

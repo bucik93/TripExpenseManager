@@ -376,6 +376,7 @@ E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripEx
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\bin\Debug\net8.0-ios\ios-arm64\Microsoft.Maui.dll
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\bin\Debug\net8.0-ios\ios-arm64\Microsoft.Maui.Essentials.dll
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\bin\Debug\net8.0-ios\ios-arm64\Microsoft.Maui.Graphics.dll
+E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\bin\Debug\net8.0-ios\ios-arm64\Plugin.Maui.Audio.dll
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\bin\Debug\net8.0-ios\ios-arm64\SQLite-net.dll
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\bin\Debug\net8.0-ios\ios-arm64\SQLitePCLRaw.batteries_v2.dll
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\bin\Debug\net8.0-ios\ios-arm64\SQLitePCLRaw.core.dll
@@ -620,6 +621,7 @@ E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripEx
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\bin\Debug\net8.0-ios\ios-arm64\libxamarin-dotnet-nativeaot.a
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\bin\Debug\net8.0-ios\ios-arm64\libxamarin-dotnet.a
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\bin\Debug\net8.0-ios\ios-arm64\libxamarin-dotnet.dylib
+E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\build-signature\signature
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\staticwebassets.build.json
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\staticwebassets.development.json
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\staticwebassets\msbuild.TripExpenseManager.Microsoft.AspNetCore.StaticWebAssets.props
@@ -641,9 +643,6 @@ E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripEx
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449@2x.png
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\resizetizer\sp\splash_58C11A0A2CDF3C43117FC29EECA319E6FBFEFE150B9123BB20E86A467F499449@3x.png
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\mauisplash.stamp
-E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\dotnet_bot@3x.png
-E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\dotnet_bot@2x.png
-E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\dotnet_bot.png
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon76x76@2x.png
@@ -656,6 +655,9 @@ E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripEx
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@3x.png
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
+E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\dotnet_bot@3x.png
+E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\dotnet_bot@2x.png
+E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\dotnet_bot.png
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\mauiimage.stamp
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\resizetizer\f\MauiInfo.plist
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\obj\Debug\net8.0-ios\ios-arm64\mauifont.stamp

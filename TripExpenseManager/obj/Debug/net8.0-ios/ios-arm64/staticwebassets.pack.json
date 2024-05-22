@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\TripExpenseManager.styles.css"
     },
     {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\assets\\bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\bg.jpg"
+    },
+    {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\assets\\logo.jpg",
+      "PackagePath": "staticwebassets\\assets\\logo.jpg"
+    },
+    {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\css\\DarkMood.css",
+      "PackagePath": "staticwebassets\\css\\DarkMood.css"
+    },
+    {
       "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
@@ -23,6 +35,10 @@
     {
       "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\ffwd.png",
+      "PackagePath": "staticwebassets\\ffwd.png"
     },
     {
       "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\images\\chair.png",
@@ -71,6 +87,22 @@
     {
       "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\pause.png",
+      "PackagePath": "staticwebassets\\pause.png"
+    },
+    {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\play.png",
+      "PackagePath": "staticwebassets\\play.png"
+    },
+    {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\rewind.png",
+      "PackagePath": "staticwebassets\\rewind.png"
+    },
+    {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\stop.png",
+      "PackagePath": "staticwebassets\\stop.png"
     },
     {
       "Id": "obj\\Debug\\net8.0-ios\\ios-arm64\\staticwebassets\\msbuild.TripExpenseManager.Microsoft.AspNetCore.StaticWebAssets.props",

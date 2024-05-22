@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\components\\pages\\musicplayer.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\components\\pages\\settingspage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\components\\pages\\settingspage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\components\\pages\\audioplayerpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\components\\pages\\audioplayerpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|solutionrelative:tripexpensemanager\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F6FEB7FF-D0E8-43FA-A6FF-F811131837A7}|TripExpenseManager\\TripExpenseManager.csproj|e:\\repo github projekty pluralsight\\tripexpensemanager\\tripexpensemanager\\tripexpensemanager\\components\\pages\\englishhomepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -242,7 +242,7 @@
               "RelativeDocumentMoniker": "TripExpenseManager\\Components\\Pages\\MusicPlayer.razor",
               "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Components\\Pages\\MusicPlayer.razor",
               "RelativeToolTip": "TripExpenseManager\\Components\\Pages\\MusicPlayer.razor",
-              "ViewState": "AQIAAFsAAAAAAAAAAAAIwGcAAAAcAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEAAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-22T08:58:40.031Z",
               "EditorCaption": ""
@@ -257,8 +257,7 @@
               "RelativeToolTip": "TripExpenseManager\\Components\\Pages\\EnglishHomePage.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-21T05:43:34.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-21T05:43:34.87Z"
             },
             {
               "$type": "Document",
@@ -270,8 +269,7 @@
               "RelativeToolTip": "TripExpenseManager\\MauiProgram.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAQwBsAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T07:33:18.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T07:33:18.638Z"
             },
             {
               "$type": "Document",
@@ -283,8 +281,7 @@
               "RelativeToolTip": "TripExpenseManager\\App.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAcwAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T09:42:06.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T09:42:06.1Z"
             },
             {
               "$type": "Document",
@@ -296,12 +293,11 @@
               "RelativeToolTip": "TripExpenseManager\\Components\\Pages\\SaveExpensePage.razor",
               "ViewState": "AQIAAAwAAAAAAAAAAIBZwCUAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-09T07:03:18.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T07:03:18.9Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SettingsPage.razor",
               "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Components\\Pages\\SettingsPage.razor",
               "RelativeDocumentMoniker": "TripExpenseManager\\Components\\Pages\\SettingsPage.razor",
@@ -309,25 +305,23 @@
               "RelativeToolTip": "TripExpenseManager\\Components\\Pages\\SettingsPage.razor",
               "ViewState": "AQIAAEsAAAAAAAAAAAAAAFIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-29T09:49:25.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T09:49:25.853Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "index.html",
               "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "TripExpenseManager\\wwwroot\\index.html",
               "ToolTip": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\index.html",
               "RelativeToolTip": "TripExpenseManager\\wwwroot\\index.html",
-              "ViewState": "AQIAAAIAAAAAAAAAAADwvw8AAADWAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAADwvxAAAAAPAQAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-04-28T12:32:18.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T12:32:18.149Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SingleTripPage.razor",
               "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Components\\Pages\\SingleTripPage.razor",
               "RelativeDocumentMoniker": "TripExpenseManager\\Components\\Pages\\SingleTripPage.razor",
@@ -335,12 +329,11 @@
               "RelativeToolTip": "TripExpenseManager\\Components\\Pages\\SingleTripPage.razor",
               "ViewState": "AQIAAGAAAAAAAAAAAAAAACEAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-07T10:21:52.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T10:21:52.257Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ManageExpenseCategoriesPage.razor",
               "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Components\\Pages\\ManageExpenseCategoriesPage.razor",
               "RelativeDocumentMoniker": "TripExpenseManager\\Components\\Pages\\ManageExpenseCategoriesPage.razor",
@@ -348,12 +341,11 @@
               "RelativeToolTip": "TripExpenseManager\\Components\\Pages\\ManageExpenseCategoriesPage.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-10T07:10:11.148Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T07:10:11.148Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AudioPlayerPage.razor",
               "DocumentMoniker": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\Components\\Pages\\AudioPlayerPage.razor",
               "RelativeDocumentMoniker": "TripExpenseManager\\Components\\Pages\\AudioPlayerPage.razor",
@@ -361,8 +353,7 @@
               "RelativeToolTip": "TripExpenseManager\\Components\\Pages\\AudioPlayerPage.razor",
               "ViewState": "AQIAAJcAAAAAAAAAAAAiwJoAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-22T07:02:56.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T07:02:56.242Z"
             },
             {
               "$type": "Document",
@@ -374,8 +365,7 @@
               "RelativeToolTip": "TripExpenseManager\\Models\\MediaState.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T07:04:50.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T07:04:50.646Z"
             },
             {
               "$type": "Document",
@@ -387,8 +377,7 @@
               "RelativeToolTip": "TripExpenseManager\\Components\\_Imports.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T08:07:46.4Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T08:07:46.4Z"
             },
             {
               "$type": "Document",
@@ -400,8 +389,7 @@
               "RelativeToolTip": "TripExpenseManager\\Services\\TripsService.cs",
               "ViewState": "AQIAAEAAAAAAAAAAAAAIwFQAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T11:38:26.996Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T11:38:26.996Z"
             },
             {
               "$type": "Document",
@@ -413,8 +401,7 @@
               "RelativeToolTip": "TripExpenseManager\\Components\\Pages\\SignInPage.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T07:22:18.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T07:22:18.403Z"
             },
             {
               "$type": "Document",
@@ -426,8 +413,7 @@
               "RelativeToolTip": "TripExpenseManager\\Components\\Pages\\Index.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T07:20:59.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T07:20:59.666Z"
             },
             {
               "$type": "Document",
@@ -439,8 +425,7 @@
               "RelativeToolTip": "TripExpenseManager\\Components\\Layout\\MainLayout.razor",
               "ViewState": "AQIAAAMAAAAAAAAAAIBJwAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T08:48:13.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T08:48:13.177Z"
             },
             {
               "$type": "Document",
@@ -452,8 +437,7 @@
               "RelativeToolTip": "TripExpenseManager\\Components\\Layout\\InnerPagesLayout.razor.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-07T12:53:03.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T12:53:03.499Z"
             },
             {
               "$type": "Document",
@@ -465,8 +449,7 @@
               "RelativeToolTip": "TripExpenseManager\\App.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-28T09:56:43.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T09:56:43.894Z"
             },
             {
               "$type": "Document",
@@ -478,8 +461,7 @@
               "RelativeToolTip": "TripExpenseManager\\Components\\Pages\\HomePage.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T07:25:36.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T07:25:36.907Z"
             },
             {
               "$type": "Document",
@@ -491,8 +473,7 @@
               "RelativeToolTip": "TripExpenseManager\\wwwroot\\css\\DarkMood.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-13T12:51:18.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T12:51:18.933Z"
             },
             {
               "$type": "Document",
@@ -504,8 +485,7 @@
               "RelativeToolTip": "TripExpenseManager\\Components\\Layout\\AuthLayout.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T08:45:23.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T08:45:23.068Z"
             },
             {
               "$type": "Document",
@@ -517,8 +497,7 @@
               "RelativeToolTip": "TripExpenseManager\\Services\\DropDownsService.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAAgwBsAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T11:10:50.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T11:10:50.292Z"
             },
             {
               "$type": "Document",
@@ -530,8 +509,7 @@
               "RelativeToolTip": "TripExpenseManager\\Components\\Pages\\SaveTripPage.razor",
               "ViewState": "AQIAAJAAAAAAAAAAAIBZwH8AAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-29T09:50:18.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T09:50:18.565Z"
             },
             {
               "$type": "Document",
@@ -543,8 +521,7 @@
               "RelativeToolTip": "TripExpenseManager\\Models\\LoggedInUser.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T08:05:31.901Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T08:05:31.901Z"
             },
             {
               "$type": "Document",
@@ -556,8 +533,7 @@
               "RelativeToolTip": "TripExpenseManager\\Services\\AuthService.cs",
               "ViewState": "AQIAACsAAAAAAAAAAAAawD4AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T12:39:55.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T12:39:55.109Z"
             },
             {
               "$type": "Document",
@@ -569,8 +545,7 @@
               "RelativeToolTip": "TripExpenseManager\\Data\\Trip.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAgwCcAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T07:46:23.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T07:46:23.373Z"
             },
             {
               "$type": "Document",
@@ -582,8 +557,7 @@
               "RelativeToolTip": "TripExpenseManager\\Models\\TabBarItem.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T11:41:15.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T11:41:15.637Z"
             },
             {
               "$type": "Document",
@@ -595,8 +569,7 @@
               "RelativeToolTip": "TripExpenseManager\\Components\\Pages\\TripsPage.razor",
               "ViewState": "AQIAAB0AAAAAAAAAAADwvycAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-29T09:48:45.484Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T09:48:45.484Z"
             },
             {
               "$type": "Document",
@@ -608,8 +581,7 @@
               "RelativeToolTip": "TripExpenseManager\\MauiInterop.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAQwCAAAAB3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T09:30:26.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T09:30:26.403Z"
             },
             {
               "$type": "Document",
@@ -621,8 +593,7 @@
               "RelativeToolTip": "TripExpenseManager\\Components\\Layout\\InnerPagesLayout.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-07T12:49:12.059Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T12:49:12.059Z"
             },
             {
               "$type": "Document",
@@ -634,8 +605,7 @@
               "RelativeToolTip": "TripExpenseManager\\States\\AppState.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAYwCQAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T10:45:04.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T10:45:04.498Z"
             },
             {
               "$type": "Document",
@@ -647,8 +617,7 @@
               "RelativeToolTip": "TripExpenseManager\\Data\\Expense.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T07:45:22.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T07:45:22.156Z"
             },
             {
               "$type": "Document",
@@ -660,8 +629,7 @@
               "RelativeToolTip": "TripExpenseManager\\ViewModels\\AppViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T09:21:47.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T09:21:47.668Z"
             },
             {
               "$type": "Document",
@@ -673,8 +641,7 @@
               "RelativeToolTip": "TripExpenseManager\\Components\\FormContent.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-09T07:06:58.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T07:06:58.331Z"
             },
             {
               "$type": "Document",
@@ -699,8 +666,7 @@
               "RelativeToolTip": "TripExpenseManager\\AppConstants.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAuwBAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T10:53:05.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T10:53:05.953Z"
             },
             {
               "$type": "Document",
@@ -712,8 +678,7 @@
               "RelativeToolTip": "TripExpenseManager\\Components\\Pages\\SignUpPage.razor",
               "ViewState": "AQIAACEAAAAAAAAAAIBZwDUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-28T07:23:09.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T07:23:09.107Z"
             },
             {
               "$type": "Document",
@@ -725,8 +690,7 @@
               "RelativeToolTip": "TripExpenseManager\\GlobalUsings.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T07:49:50.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T07:49:50.748Z"
             },
             {
               "$type": "Document",
@@ -738,8 +702,7 @@
               "RelativeToolTip": "TripExpenseManager\\Extensions\\NavigationManagerExtensions.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T06:17:26.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T06:17:26.617Z"
             },
             {
               "$type": "Document",
@@ -751,8 +714,7 @@
               "RelativeToolTip": "TripExpenseManager\\Data\\ExpenseCategory.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T07:46:35.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T07:46:35.677Z"
             },
             {
               "$type": "Document",
@@ -764,8 +726,7 @@
               "RelativeToolTip": "TripExpenseManager\\Data\\DatabaseContext.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAADwvwsAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T07:46:28.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T07:46:28.555Z"
             },
             {
               "$type": "Document",
@@ -777,8 +738,7 @@
               "RelativeToolTip": "TripExpenseManager\\Data\\LocationCategory.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T07:46:24.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T07:46:24.656Z"
             },
             {
               "$type": "Document",
@@ -802,8 +762,7 @@
               "RelativeToolTip": "TripExpenseManager\\Models\\MethodResult.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIBZwBsAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T07:54:09.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T07:54:09.334Z"
             },
             {
               "$type": "Document",
@@ -815,8 +774,7 @@
               "RelativeToolTip": "TripExpenseManager\\wwwroot\\css\\bootstrap\\open-iconic-bootstrap.css",
               "ViewState": "AQIAAJADAAAAAAAAAAAmwLgDAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-29T09:30:32.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T09:30:32.961Z"
             },
             {
               "$type": "Document",
@@ -828,8 +786,7 @@
               "RelativeToolTip": "TripExpenseManager\\MainPage.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-28T09:16:42.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T09:16:42.472Z"
             },
             {
               "$type": "Document",
@@ -841,8 +798,7 @@
               "RelativeToolTip": "TripExpenseManager\\MainPage.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T09:25:59.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T09:25:59.983Z"
             },
             {
               "$type": "Document",
@@ -854,8 +810,7 @@
               "RelativeToolTip": "TripExpenseManager\\TripExpenseManager.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-29T06:13:56.982Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T06:13:56.982Z"
             },
             {
               "$type": "Document",
@@ -867,8 +822,7 @@
               "RelativeToolTip": "TripExpenseManager\\Platforms\\Android\\MainActivity.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAxwBQAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T11:03:14.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T11:03:14.408Z"
             },
             {
               "$type": "Document",
@@ -878,8 +832,7 @@
               "ToolTip": "C:\\Users\\piotr\\.nuget\\packages\\communitytoolkit.maui\\7.0.0\\ReadMe.txt",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-04-29T07:48:24.467Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T07:48:24.467Z"
             },
             {
               "$type": "Document",
@@ -891,8 +844,7 @@
               "RelativeToolTip": "TripExpenseManager\\Models\\SignInModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T07:47:07.644Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T07:47:07.644Z"
             },
             {
               "$type": "Document",
@@ -902,8 +854,7 @@
               "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.52\\tools\\Xamarin.Android.Common.targets",
               "ViewState": "AQIAAOgJAAAAAAAAAAAhwO4JAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-04-28T08:08:11.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T08:08:11.084Z"
             },
             {
               "$type": "Document",
@@ -915,8 +866,7 @@
               "RelativeToolTip": "TripExpenseManager\\Platforms\\Android\\AndroidManifest.xml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2024-04-28T08:09:18.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T08:09:18.793Z"
             },
             {
               "$type": "Document",
@@ -928,8 +878,7 @@
               "RelativeToolTip": "TripExpenseManager\\Data\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T07:46:52.854Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T07:46:52.854Z"
             },
             {
               "$type": "Document",
@@ -941,8 +890,7 @@
               "RelativeToolTip": "TripExpenseManager\\Data\\TripStatus.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T07:46:46.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T07:46:46.857Z"
             }
           ]
         }

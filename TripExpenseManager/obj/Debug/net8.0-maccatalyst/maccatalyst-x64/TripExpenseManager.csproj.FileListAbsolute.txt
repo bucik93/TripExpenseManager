@@ -368,6 +368,7 @@ E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripEx
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.dll
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Essentials.dll
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Graphics.dll
+E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Plugin.Maui.Audio.dll
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\SQLite-net.dll
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.batteries_v2.dll
 E:\REPO GITHUB PROJEKTY PLURALSIGHT\TripExpenseManager\TripExpenseManager\TripExpenseManager\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\SQLitePCLRaw.core.dll

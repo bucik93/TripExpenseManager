@@ -60,11 +60,16 @@ splashSplashScreen.scale-400.png
 wwwroot\TripExpenseManager.styles.css
 wwwroot\TripExpenseManager.bundle.scp.css
 AboutAssets.txt
+p_21640870_534.mp3
+wwwroot\assets\bg.jpg
+wwwroot\assets\logo.jpg
 wwwroot\css\app.css
 wwwroot\css\bootstrap\bootstrap.min.css
 wwwroot\css\bootstrap\bootstrap.min.css.map
 wwwroot\css\bootstrap\open-iconic-bootstrap.css
+wwwroot\css\DarkMood.css
 wwwroot\favicon.png
+wwwroot\ffwd.png
 wwwroot\images\chair.png
 wwwroot\images\chair3.png
 wwwroot\images\city.png
@@ -77,3 +82,7 @@ wwwroot\images\travel-beach.png
 wwwroot\images\travel-beach3.png
 wwwroot\images\travel-beach44.png
 wwwroot\index.html
+wwwroot\pause.png
+wwwroot\play.png
+wwwroot\rewind.png
+wwwroot\stop.png
