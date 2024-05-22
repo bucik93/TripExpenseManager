@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TripExpenseManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+010510a989e6867ec3a0e05a66c5cfc182535314")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+f1becc92d7b387f48a8bb4d4cf8eee57d2b49ac2")]
 [assembly: System.Reflection.AssemblyProductAttribute("TripExpenseManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TripExpenseManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

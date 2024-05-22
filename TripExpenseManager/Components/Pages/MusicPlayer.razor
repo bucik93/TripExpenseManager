@@ -14,42 +14,42 @@
             <p id="songName">Cool Music Player</p>
         </div>
         <div class="wave-container select-none">
-            <span class="wave active" style="--i: 0s"></span>
-            <span class="wave active" style="--i: 0.2s"></span>
-            <span class="wave active" style="--i: 0.4s"></span>
-            <span class="wave active" style="--i: 0.6s"></span>
-            <span class="wave active" style="--i: 0.4s"></span>
-            <span class="wave active" style="--i: 0.2s"></span>
-            <span class="wave active" style="--i: 0s"></span>
-            <span class="wave active" style="--i: 0s"></span>
-            <span class="wave active" style="--i: 0.2s"></span>
-            <span class="wave active" style="--i: 0.4s"></span>
-            <span class="wave active" style="--i: 0.6s"></span>
-            <span class="wave active" style="--i: 0.4s"></span>
-            <span class="wave active" style="--i: 0.2s"></span>
-            <span class="wave active" style="--i: 0s"></span>
+            <span class="wave" style="--i: 0s"></span>
+            <span class="wave" style="--i: 0.2s"></span>
+            <span class="wave" style="--i: 0.4s"></span>
+            <span class="wave" style="--i: 0.6s"></span>
+            <span class="wave" style="--i: 0.4s"></span>
+            <span class="wave" style="--i: 0.2s"></span>
+            <span class="wave" style="--i: 0s"></span>
+            <span class="wave" style="--i: 0s"></span>
+            <span class="wave" style="--i: 0.2s"></span>
+            <span class="wave" style="--i: 0.4s"></span>
+            <span class="wave" style="--i: 0.6s"></span>
+            <span class="wave" style="--i: 0.4s"></span>
+            <span class="wave" style="--i: 0.2s"></span>
+            <span class="wave" style="--i: 0s"></span>
         </div>
         <div class="button-pallet">
             <div class="controllers">
                 <div class="song-controller">
                     <p id="currentTime" class="time select-none">00:00</p>
-                    <input type="range" name="seekBar" id="seekBar" value="0">
-                    <p id="currentTime" class="time select-none">00:00</p>
+                    <input type="range" name="seekBar" id="seekBar" value="0" oninput="changeSongController(event)">
+                    <p id="duration" class="time select-none">00:00</p>
                 </div>
                 <div class="buttons">
-                    <button type="button" class="btn btn1 refresh">
+                    <button type="button" class="btn btn1 refresh" onclick="refreshBtnClick()">
                         <i class="fa solid fa-rotate-right"></i>
                     </button>
-                    <button type="button" class="btn btn2 backward">
+                    <button type="button" class="btn btn2 backward" onclick="prevBtnClick()">
                         <i class="fa solid fa-backward-step"></i>
                     </button>
-                    <button type="button" class="btn play-btn1">
+                    <button type="button" class="btn play-btn1" onclick="playBtnClick()">
                         <i class="fa solid fa-play"></i>
                     </button>
-                    <button type="button" class="btn btn2 forward">
+                    <button type="button" class="btn btn2 forward" onclick="nextBtnClick()">
                         <i class="fa solid fa-forward-step"></i>
                     </button>
-                    <button type="button" class="btn btn1 repeat">
+                    <button type="button" class="btn btn1 repeat" onclick="repeatBtnClick()">
                         <i class="fa solid fa-repeat"></i>
                     </button>
                 </div>
@@ -57,18 +57,18 @@
                     <div id="volumeIcon">
                         <i class="fa-solid fa-volume-high"></i>
                     </div>
-                    <input type="range" name="volumeBar" id="volumeBar" min="0" max="1" step="0.01" value="1">
+                    <input type="range" name="volumeBar" id="volumeBar" min="0" max="1" step="0.01" value="1" oninput="changeVolumeController(event)">
                     <div>
-                        <p id="volumeValue">100%</p>
+                        <p id="volumeValue" class="volumeValue select-none">100%</p>
                     </div>
                 </div>
             </div>
-            <button type="button" class="btn btn2" onclick="showSongsList()">
+            <button type="button" class="btn btn3" onclick="showSongsList()">
                 <i class="fa-solid fa-chevron-up"></i>
             </button>
         </div>
         <div id="songList" class="song-list">
-            <button type="button" class="btn btn2" onclick="hideSongsList()">
+            <button type="button" class="btn btn3" onclick="hideSongsList()">
                 <i class="fa-solid fa-chevron-down"></i>
             </button>
             <div class="songs">
@@ -111,7 +111,6 @@
 </div>
 
 <script type="text/javascript">
-
     const songsList = document.getElementById("songsList");
     const fileSelector = document.getElementById("fileSelector");
     let currentAudioIndex = 0;
@@ -144,25 +143,76 @@
 
         files = [
             {
-                name: "Night Owl",
-                artist: "Broke For Free",
-                image: "Image URL",
-                path: "Night_Owl.mp3",
-                index: "0",
+                name: "All Time Low",
+                artist: "Jon Bellion, Stormzy",
+                cover: "https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/img/all_time_low.jpg",
+                source: "https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/music/All_Time_Low.mp3",
+                url: "https://youtu.be/AXnqkVTFUqY",
+                favorited: false
             },
             {
-                name: "Enthusiast",
-                artist: "Tours",
-                image: "Image URL",
-                path: "Enthusiast.mp3",
-                index: "1",
+                name: "Weak when ur around",
+                artist: "Blackbear",
+                cover: "https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/img/blackbear.jpeg",
+                source: "https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/music/Blackbear.mp3",
+                url: "https://youtu.be/gk2fKTitijs",
+                favorited: true
             },
             {
-                name: "Shipping Lanes",
-                artist: "Chad Crouch",
-                image: "Image URL",
-                path: "Shipping_Lanes.mp3",
-                index: "2",
+                name: "Bloom",
+                artist: "Dabin, Dia Frampton",
+                cover: "https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/img/bloom_dabin.jpeg",
+                source: "https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/music/Bloom.mp3",
+                url: "https://youtu.be/MVvclgDMtps",
+                favorited: false
+            },
+            {
+                name: "Channa Mereya - Unplugged",
+                artist: "Pritam, Arijit Singh",
+                cover: "https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/img/channa_mereya-unplugged.jpg",
+                source: "https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/music/Channa_Mereya.mp3",
+                url: "https://youtu.be/PYzFp5o4lhE",
+                favorited: true
+            },
+            {
+                name: "Falling",
+                artist: "Trever Daniel",
+                cover: "https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/img/falling.png",
+                source: "https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/music/Falling.mp3",
+                url: "https://youtu.be/L7mfjvdnPno",
+                favorited: false
+            },
+            {
+                name: "Kun Faya Kun",
+                artist: "A.R. Rahman",
+                cover: "https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/img/kun_faya_kun.jpeg",
+                source: "https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/music/Kun_Faya_Kun.mp3",
+                url: "https://youtu.be/T94PHkuydcw",
+                favorited: true
+            },
+            {
+                name: "Love Is Gone - Acoustic",
+                artist: "SLANDER",
+                cover: "https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/img/love_is_gone-acoustic.jpeg",
+                source: "https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/music/Love_Is_Gone.mp3",
+                url: "https://youtu.be/hCrtcVDgCGw",
+                favorited: true
+            },
+            {
+                name: "Pehli Dafa",
+                artist: "Atif Aslam",
+                cover: "https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/img/pehli_dafa.jpeg",
+                source: "https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/music/Pehli_Dafa.mp3",
+                url: "https://youtu.be/SxTYjptEzZs",
+                favorited: false
+            },
+            {
+                name: "Saansein",
+                artist: "Prateek Kuhad",
+                cover: "https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets/img/saansein.jpg",
+                source: "https://raw.githubusercontent.com/hafizmp/Music-Application/master/Assets//music/Saansein.mp3",
+                url: "https://youtu.be/R3Ed4zvQ0Hs",
+                favorited: false
             },
         ];
 
@@ -180,20 +230,182 @@
             item.classList.add("item");
 
             item.innerHTML = `<div class="details">
-            <img src="../assets/logo.jpg" alt="" />
-            <h5>${file.name.substring(0, 20)}</h5>
-            </div>
-            <button
-            type="button"
-            data-index="${index}"
-            class="btn play-btn2"
-            >
-            <i class="fa-solid fa-play"></i>
-            </button>`;
+                <img src="../assets/logo.jpg" alt="" />
+                <h5>${file.name.substring(0, 20)}</h5>
+                </div>
+                <button
+                type="button"
+                data-index="${index}"
+                class="btn play-btn2"
+                >
+                <i class="fa-solid fa-play"></i>
+                </button>`;
 
             list.appendChild(item);
+
+            setAudio();
+
+            const playBtn = item.querySelector(".play-btn2");
+
+            playBtn.onclick = () => {
+                if (currentAudioIndex === index) {
+                    checkCurrentAudio();
+                    return;
+                } else {
+                    preAudioIndex = currentAudioIndex;
+                    currentAudioIndex = index;
+                }
+
+                setAudio();
+
+                return playBtnClick();
+            };
         });
+    }
+
+    function playBtnClick() {
+        checkCurrentAudio();
+    }
+
+    function setAudio() {
+        audio.src = songs[currentAudioIndex].source;
+        audio.load();
+        songName.innerHTML = songs[currentAudioIndex].name;
+    }
+
+    function checkCurrentAudio() {
+        if (songs.length !== 0) {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
         }
+    }
+
+    function refreshBtnClick() {
+        audio.currentTime = 0;
+    }
+
+    function prevBtnClick() {
+        if (currentAudioIndex !== 0 && songs.length !== 0) {
+            preAudioIndex = currentAudioIndex;
+            --currentAudioIndex;
+
+            setAudio();
+            checkCurrentAudio();
+        }
+    }
+
+    function nextBtnClick() {
+        if (songs.length !== 0 && currentAudioIndex !== songs.length - 1) {
+            preAudioIndex = currentAudioIndex;
+            ++currentAudioIndex;
+
+            setAudio();
+            checkCurrentAudio();
+        }
+    }
+
+    function repeatBtnClick() {
+        if (repeat) {
+            repeat = false;
+            repeatBtn.classList.remove("active");
+        } else {
+            repeat = true;
+            repeatBtn.classList.add("active");
+        }
+    }
+
+    function changeSongController(e) {
+        if (songs.length > 0) {
+            audio.currentTime = e.target.value / (100 / audio.duration);
+        }
+    }
+
+    function formatTime(time) {
+        let min = Math.floor(time / 60);
+        if (min < 10) {
+            min = `0${min}`;
+        }
+        let sec = Math.floor(time - min * 60);
+        if (sec < 10) {
+            sec = `0${sec}`;
+        }
+
+        return `${min}:${sec}`;
+    }
+
+    function changeVolumeController(e) {
+        audio.volume = e.target.value;
+
+        const volume = Math.floor(e.target.value * 100);
+        volumeValue.innerHTML = `${volume}%`;
+
+        if (volume === 0) {
+            volumeIcon.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+        } else if (volume > 0 && volume <= 50) {
+            volumeIcon.innerHTML = '<i class="fa-solid fa-volume-low"></i>';
+        } else {
+            volumeIcon.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+        }
+    }
+
+    audio.addEventListener("timeupdate", function () {
+        if (audio.currentTime === 0) {
+            seekBar.value = 0;
+        } else {
+            currentTime.innerHTML = formatTime(audio.currentTime);
+            durationTime.innerHTML = formatTime(audio.duration);
+
+            seekBar.value = audio.currentTime * (100 / audio.duration);
+        }
+    });
+
+    audio.addEventListener("playing", function () {
+        waves.forEach((wave) => {
+            wave.classList.add("active");
+        });
+        playBtn1.innerHTML = '<i class="fa-solid fa-pause"></i>';
+        const prePlayBtn = document.querySelector(`[data-index="${preAudioIndex}"]`);
+        const currentPlayBtn = document.querySelector(
+            `[data-index="${currentAudioIndex}"]`
+        );
+        if (prePlayBtn) {
+            prePlayBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
+        }
+        if (currentPlayBtn) {
+            currentPlayBtn.innerHTML = '<i class="fa-solid fa-pause"></i>';
+        }
+    });
+
+    audio.addEventListener("pause", function () {
+        waves.forEach((wave) => {
+            wave.classList.remove("active");
+        });
+        playBtn1.innerHTML = '<i class="fa-solid fa-play"></i>';
+        const currentPlayBtn = document.querySelector(
+            `[data-index="${currentAudioIndex}"]`
+        );
+        if (currentPlayBtn) {
+            currentPlayBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
+        }
+    });
+
+    audio.addEventListener("ended", function () {
+        if (!repeat) {
+            if (currentAudioIndex !== songs.length - 1) {
+                preAudioIndex = currentAudioIndex;
+                ++currentAudioIndex;
+                setAudio();
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        } else {
+            audio.play();
+        }
+    });
 </script>
 @code {
 
@@ -254,7 +466,7 @@
     .main-container {
         position: relative;
         /*     width: 380px;
-                                                    height: 660px; */
+                                                                            height: 660px; */
         /* height: 660px; */
         background: linear-gradient( to top left, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('assets/bg.jpg');
         background-size: cover;
@@ -262,7 +474,7 @@
         background-repeat: no-repeat;
         /*  border-radius: 36px; */
         /*         box-shadow: 0 5px 5px rgba(0,0,0,0.9);
-                     */ display: flex;
+                                             */ display: flex;
         flex-direction: column;
         overflow: hidden;
     }
@@ -299,25 +511,25 @@
     }
 
     .wave-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 80px;
-        column-gap: 8px;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  column-gap: 8px;
+}
 
-        .wave-container .wave {
-            width: 5px;
-            height: 5px;
-            background-color: var(--primary);
-            border-radius: 10px;
-            box-shadow: 0 0 10px var(--primary);
-        }
+.wave-container .wave {
+  width: 5px;
+  height: 5px;
+  background: var(--primary);
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--primary);
+}
 
-            .wave-container .wave.active {
-                animation: animateWave 1s infinite ease-in-out;
-                animation-delay: var(--i);
-            }
+ .wave-container .wave.active {
+  animation: animate 1s infinite;
+  animation-delay: var(--i);
+}
 
     @@keyframes animateWave {
         0% {
@@ -381,11 +593,12 @@
         border: none;
         outline: none;
         background: none;
-        color: rgba(255,255,255, 0.8);
+        color: rgba(255,255,255, 1);
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        transform-origin: center;
         transition: 0.2s;
     }
 
@@ -404,6 +617,11 @@
         .btn.btn2 {
             font-size: 20px;
             color: var(--primary);
+        }
+
+        .btn.btn3 {
+            color: var(--primary);
+            font-size: 20px;
         }
 
         .btn.play-btn1 {
@@ -434,6 +652,7 @@
 
         .controllers .volume-controller div {
             width: 60px;
+            height: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -494,8 +713,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    padding: 8px;
-                    padding-right: 16px;
+                    padding: 8px 16px 8px 8px;
                     border-radius: 10px;
                     color: var(--primary);
                     transition: transform 0.2s;
@@ -510,6 +728,9 @@
                         display: flex;
                         align-items: center;
                         column-gap: 12px;
+                        pointer-events: none;
+                        user-select: none;
+                        -webkit-user-select: none;
                     }
 
                         .song-list .songs .list .item .details img {
@@ -522,8 +743,7 @@
 
                         .song-list .songs .list .item .details h5 {
                             font-size: 14px;
-                            font-weight: 600;
-                            color: var(--primary);
+                            font-weight: 600;                            
                         }
 
                     .song-list .songs .list .item .play-btn2 {
