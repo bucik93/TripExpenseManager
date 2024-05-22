@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
+using Plugin.Maui.Audio;
 using TripExpenseManager.Data;
 using TripExpenseManager.ViewModels;
 
@@ -24,6 +25,7 @@ namespace TripExpenseManager
             builder.Services.AddBlazorWebViewDeveloperTools();
             builder.Logging.AddDebug();
 #endif
+            builder.Services.AddSingleton(AudioManager.Current);
             AddServices(builder.Services);
             return builder.Build();
         }

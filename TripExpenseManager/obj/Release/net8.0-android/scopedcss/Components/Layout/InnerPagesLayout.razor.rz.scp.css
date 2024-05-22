@@ -1,0 +1,19 @@
+
+
+.top-navbar[b-wjdsxi9glt] {
+    height: var(--navbar-height);
+    z-index: 10;
+    color: white;
+}
+
+.body-content[b-wjdsxi9glt] {
+    padding-top: var(--navbar-height);
+    padding-bottom: calc(var(--navbar-height) + 20px);
+}
+
+
+
+.bx-md[b-wjdsxi9glt] {
+    height: 5px;
+    margin-bottom: 30px;
+}

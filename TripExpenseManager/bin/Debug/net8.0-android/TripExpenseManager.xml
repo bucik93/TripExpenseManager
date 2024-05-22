@@ -4,6 +4,45 @@
         <name>TripExpenseManager</name>
     </assembly>
     <members>
+        <member name="M:TripExpenseManager.Components.Pages.AudioPlayerPage.SetState(TripExpenseManager.Models.MediaState)">
+            <summary>
+            Change UI depending on the state
+            </summary>
+            <param name="state"></param>
+        </member>
+        <member name="M:TripExpenseManager.Components.Pages.AudioPlayerPage.PlayAudio">
+            <summary>
+            Called from the Play button
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TripExpenseManager.Components.Pages.AudioPlayerPage.Forward">
+            <summary>
+            Skip forward 10 seconds
+            </summary>
+        </member>
+        <member name="M:TripExpenseManager.Components.Pages.AudioPlayerPage.StopAudio">
+            <summary>
+            Stop
+            </summary>
+        </member>
+        <member name="M:TripExpenseManager.Components.Pages.AudioPlayerPage.PauseAudio">
+            <summary>
+            Pause
+            </summary>
+        </member>
+        <member name="M:TripExpenseManager.Components.Pages.AudioPlayerPage.Rewind">
+            <summary>
+            Rewind 10 seconds (or to the beginning)
+            </summary>
+        </member>
+        <member name="M:TripExpenseManager.Components.Pages.AudioPlayerPage.Player_PlaybackEnded(System.Object,System.EventArgs)">
+            <summary>
+            Tear down everything when playback ends
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
             <summary>
             Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color

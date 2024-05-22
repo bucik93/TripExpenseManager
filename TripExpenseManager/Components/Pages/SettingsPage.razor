@@ -21,11 +21,13 @@
     }
 </style>
 
+
 <div class="container p-3">
     <div class="d-flex flex-column justify-content-center align-items-center h-remaining ">
         <label class="rounded-circle text-uppercase bg-success bg-gradient text-dark text-center fw-bold shadow-lg avatar">
             @AuthService.CurrentUser.Name?[0]
         </label>
+      
         <div class="flex-grow-1 my-3 py-2 w-100 d-flex align-items-start">
             <ul class="list-group list-group-flush w-100 rounded-3">
                 <li class="list-group-item " @onclick="ChangeNameAsync">
@@ -46,6 +48,18 @@
                         <span>Manage Expense Categories</span>
                     </div>
                 </li>
+                <li class="list-group-item" @onclick="GoToEnglishHomePage">
+                    <div class="hstack gap-3">
+                        <i class="bx bx-sm bx-grid"></i>
+                        <span>englishhome</span>
+                    </div>
+                </li>
+                <li class="list-group-item" @onclick="GoToAudioPlayerPage">
+                    <div class="hstack gap-3">
+                        <i class="bx bx-sm bx-grid"></i>
+                        <span>AudioPlayer</span>
+                    </div>
+                </li>
            
             </ul>
         </div>
@@ -57,6 +71,7 @@
 </div>
 
 @code {
+   
     protected override async Task OnInitializedAsync()
     {
         AppState.SetSelectedMenuItem(AppConstants.MenuItems.Settings);
@@ -96,4 +111,13 @@
     {
         NavigationManager.GoToInnerPage("/manage-expense-categories");
     }
+    private void GoToEnglishHomePage()
+    {
+        NavigationManager.GoToInnerPage("/englishhome");
+    }
+    private void GoToAudioPlayerPage()
+    {
+        NavigationManager.GoToInnerPage("/AudioPlayerPage");
+    }
+    
 }

@@ -6,6 +6,9 @@
 @inject AppState AppState
 @inject MauiInterop MauiInterop
 
+
+  
+
 <div class="w-100 position-fixed p-3 mb-3 bg-black shaddow-sm top-navbar">
     <div class="hstack gap-3">
         <h3 class="m-0 w-100 @(MauiInterop.IsIOS ? "text-center" : "text-start")">
@@ -20,9 +23,14 @@
                 <i class="bx text-white @tabBarItem.Icon" @onclick="@tabBarItem.OnTap"/>
             }
         </label>
+      @*       <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onchange="@OnCheckBoxChange">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Dark mode</label>
+            </div> *@
         }
     </div>
 </div>
+
 <div class="body-content">
     @Body
 </div>
@@ -57,7 +65,17 @@
 
 @code {
 
+    // private bool IsDarkMood = false;
 
+    // private async void OnCheckBoxChange(ChangeEventArgs e)
+    // {
+    //     if (e.Value != null)
+    //     {
+    //         IsDarkMood = (bool)e.Value;
+    //         var newPassword = await MauiInterop.ShowProptAsync($"{IsDarkMood} czy to jest", "Enter new password", "Save New Password", string.Empty);
+
+    //     }
+    // }
     private static IDictionary<string, string> _pagesMap = new Dictionary<string, string>()
         {
             [AppConstants.MenuItems.Home] = "/",
