@@ -60,7 +60,12 @@
                         <span>AudioPlayer</span>
                     </div>
                 </li>
-           
+                <li class="list-group-item" @onclick="GoToMusicPlayerPage">
+                    <div class="hstack gap-3">
+                        <i class="bx bx-sm bx-grid"></i>
+                        <span>musicplayer</span>
+                    </div>
+                </li>
             </ul>
         </div>
         <label class="bg-danger rounded-pill py-1 px-3 text-white m-3 d-flex align-items-center" @onclick="()=> SignOut()">
@@ -118,6 +123,10 @@
     private void GoToAudioPlayerPage()
     {
         NavigationManager.GoToInnerPage("/AudioPlayerPage");
+    }
+    private void GoToMusicPlayerPage()
+    {
+        NavigationManager.GoToInnerPage("/musicplayer");
     }
     
 }

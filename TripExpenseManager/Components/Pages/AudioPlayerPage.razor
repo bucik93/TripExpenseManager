@@ -152,8 +152,10 @@
             stream = File.OpenRead(localFile);
 
             // create the audio player
-            player = _audioManager.CreatePlayer(stream);
-
+            //player = _audioManager.CreatePlayer(stream);
+            player = _audioManager.CreatePlayer(await FileSystem.OpenAppPackageFileAsync("p_21640870_534.mp3"));
+            player.Volume = 100;
+            
             // handle the PlaybackEnded event
             player.PlaybackEnded += Player_PlaybackEnded;
 

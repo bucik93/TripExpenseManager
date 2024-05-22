@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\TripExpenseManager.styles.css"
     },
     {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\assets\\bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\bg.jpg"
+    },
+    {
+      "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\assets\\logo.jpg",
+      "PackagePath": "staticwebassets\\assets\\logo.jpg"
+    },
+    {
       "Id": "E:\\REPO GITHUB PROJEKTY PLURALSIGHT\\TripExpenseManager\\TripExpenseManager\\TripExpenseManager\\wwwroot\\css\\DarkMood.css",
       "PackagePath": "staticwebassets\\css\\DarkMood.css"
     },
